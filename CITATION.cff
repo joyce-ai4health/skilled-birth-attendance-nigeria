@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this research repository, please cite it using the information below."
+
+title: "Predicting Non-Use of Skilled Birth Attendance in Nigeria Using Pre-Delivery Information: Evidence from the 2024 Nigeria Demographic and Health Survey"
+
+type: software
+
+authors:
+  - family-names: "Etata"
+    given-names: "Joyce Ebruphiyo"
+
+repository-code: "https://github.com/joyce-ai4health/skilled-birth-attendance-nigeria"
+
+abstract: >
+  This repository contains the reproducible analysis code, documentation,
+  and research outputs for a study investigating factors associated with
+  and predictive of skilled birth attendance in Nigeria using the
+  2023-24 Nigeria Demographic and Health Survey.
+
+keywords:
+  - skilled birth attendance
+  - maternal health
+  - Nigeria
+  - machine learning
+  - demographic and health survey
+  - healthcare data science
