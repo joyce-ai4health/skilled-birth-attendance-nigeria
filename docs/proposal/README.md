@@ -7,8 +7,6 @@ Predicting Non-Use of Skilled Birth Attendance in Nigeria Using Pre-Delivery Inf
 ## Author 
 
 - Intern Name(s): Joyce Ebruphiyo Etata
-- Intern ID: DF-2026-181
-- Intern Email: joyceebrusetata@gmail.com
 - Programme: Dataraflow  Internship
 - Date: October 2026
 
@@ -22,7 +20,23 @@ Predicting Non-Use of Skilled Birth Attendance in Nigeria Using Pre-Delivery Inf
 
 ## 1. Introduction
 
-*To be completed. Target: 500–800 words.*
+## 1. Introduction / Background
+
+Maternal health remains an important public-health priority because pregnancy and childbirth can involve complications that require timely recognition and appropriate care. One important component of safe childbirth is access to skilled health personnel who have the competencies required to provide appropriate care during labour and delivery and to identify, manage or refer women and newborns when complications occur. Skilled birth attendance is therefore recognised internationally as an important indicator of maternal healthcare coverage and is included as Sustainable Development Goal (SDG) indicator 3.1.2 (World Health Organization [WHO], n.d.).
+
+Despite the importance of skilled care during childbirth, access remains uneven in Nigeria. According to the 2024 Nigeria Demographic and Health Survey (NDHS), among live births in the two years before the survey, 46% were assisted by a skilled provider, most commonly a nurse or midwife. During the same period, 43% of live births occurred in a health facility, while 56% occurred at home (National Population Commission [NPC] & ICF, 2025). These national figures also conceal substantial socioeconomic inequalities. Home delivery was reported for 82% of births among women with no education and 82% among women in the poorest households (NPC & ICF, 2025). These patterns demonstrate that access to skilled childbirth care remains an important maternal-health challenge in Nigeria.
+
+Previous Nigerian research has identified several characteristics associated with skilled birth attendance, including maternal education, household wealth, geographical location, urban or rural residence, antenatal care, healthcare accessibility, media exposure and women's participation in healthcare decision-making (Adedini et al., 2017; Doctor et al., 2020). These studies have contributed substantially to understanding patterns and inequalities in maternal healthcare utilisation. However, much of the Nigeria-specific literature has focused on explaining which characteristics are statistically associated with skilled birth attendance rather than determining whether available information can be used to identify women who may be at risk of giving birth without skilled attendance before childbirth occurs.
+
+This distinction between association and prediction is important. Association studies can help identify relationships between maternal, household and community characteristics and skilled birth attendance. A prediction study has a different objective: to determine how well available information can distinguish between individuals who will and will not experience a specified outcome. In the context of skilled birth attendance, a useful prediction framework could potentially identify women at greater risk of giving birth without skilled attendance early enough for the information to support targeted maternal-health interventions or further assessment.
+
+The timing of predictor information is particularly important for such a model. A model intended for use before childbirth should not depend on information that becomes available only during or after the delivery being predicted. Variables such as the actual place of delivery, delivery complications or newborn outcomes may be strongly related to skilled birth attendance but would not represent realistic pre-delivery information for the same birth. Even antenatal-care variables require careful consideration because the information available depends on the point during pregnancy at which prediction is intended to occur. Clearly defining the prediction point and restricting predictors accordingly can therefore help reduce the risk of data leakage and produce a more realistic assessment of predictive performance.
+
+The 2024 NDHS provides an opportunity to investigate this question using recent nationally representative Nigerian data. The survey contains information on maternal and reproductive health, socioeconomic circumstances, healthcare utilisation, women's empowerment and other demographic and health characteristics (NPC & ICF, 2025). However, the final analytical population, outcome construction, candidate predictor set and missing-data profile for the proposed study will be determined only after the relevant NDHS datasets and documentation have been systematically audited. This proposal therefore does not assume analytical results that have not yet been produced.
+
+This study proposes to develop and evaluate models for predicting non-use of skilled birth attendance in Nigeria using information that could reasonably be available before childbirth. The research will distinguish prediction from statistical association, compare an interpretable baseline with appropriate machine-learning approaches, and evaluate discrimination, class-specific performance and calibration. Model-interpretation methods will be used to examine influential predictive characteristics without treating predictive importance as evidence of causality. The study will also consider the clustered structure of the NDHS and, where supported by the available data, examine predictive performance across important geographical and socioeconomic groups.
+
+The study is predictive rather than causal and will not attempt to establish that identified characteristics cause non-use of skilled birth attendance. It is also intended as a research framework rather than a clinical decision tool. Its expected contributions include a clearly defined pre-delivery prediction framework, evidence on model discrimination and calibration, assessment of performance across relevant population groups where sample sizes permit, and a reproducible analytical pipeline for working with the 2024 NDHS while respecting DHS data-use requirements.
 
 ---
 
