@@ -1,0 +1,29 @@
+# DHS data files - DO NOT upload to GitHub
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep README files inside data folders
+!data/raw/README.md
+!data/interim/README.md
+!data/processed/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment/secrets
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
