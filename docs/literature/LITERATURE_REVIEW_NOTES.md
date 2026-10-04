@@ -1160,6 +1160,1652 @@ Akinyemi, J. O., et al. (2022). Multivariate decomposition of trends, inequaliti
 https://doi.org/10.1136/bmjopen-2021-051791
 
 ---
+## Study 7: Okoli et al. (2020)
+
+### Paper Title
+
+Geographical and Socioeconomic Inequalities in the Utilization of Maternal Healthcare Services in Nigeria: 2003–2017
+
+### Publication Status
+
+Peer-reviewed journal article published in BMC Health Services Research.
+
+### Country / Study Setting
+
+Nigeria.
+
+### Dataset
+
+The study used four rounds of the Nigeria Demographic and Health Survey:
+
+- 2003 NDHS
+- 2008 NDHS
+- 2013 NDHS
+- 2018 NDHS
+
+The analysis focused on women aged 15–49 years.
+
+### Purpose of the Study
+
+The study aimed to investigate geographical and socioeconomic inequalities in the use of maternal healthcare services in Nigeria over time.
+
+The researchers examined three maternal healthcare outcomes:
+
+- Antenatal care (ANC)
+- Facility-based delivery (FBD)
+- Skilled birth attendance (SBA)
+
+They investigated whether utilisation differed according to:
+
+- Urban or rural residence
+- Nigeria's six geopolitical zones
+- Maternal education
+- Household wealth
+
+### Methods Used
+
+The researchers used several statistical measures to examine different types of inequality.
+
+Rate ratios and rate differences were used to compare maternal healthcare utilisation between urban and rural women.
+
+The Theil Index and between-group variance were used to examine relative and absolute inequalities across Nigeria's six geopolitical zones.
+
+Relative and absolute concentration indices were used to examine education- and wealth-related inequalities.
+
+In simple terms, these methods allowed the researchers to measure how large the differences in maternal healthcare utilisation were between different groups of Nigerian women and whether those differences changed over time.
+
+### Main Findings
+
+The study found persistent geographical and socioeconomic inequalities in maternal healthcare utilisation in Nigeria.
+
+Maternal healthcare utilisation was generally lower among:
+
+- Poorer women
+- Less-educated women
+- Women living in rural areas
+- Women living in the North West
+- Women living in the North East
+
+The study found that relative inequalities in antenatal care and facility-based delivery across the six geopolitical zones declined over time.
+
+However, the results did not show evidence that absolute geographical inequalities in ANC, facility-based delivery and skilled birth attendance disappeared over time.
+
+Maternal healthcare utilisation also remained concentrated among better-educated and wealthier women.
+
+The study therefore showed that improvements in maternal healthcare utilisation at the national level did not mean that all Nigerian women benefited equally.
+
+### My Understanding
+
+In simple terms, the researchers wanted to know whether Nigerian women had equal access to and use of important maternal healthcare services.
+
+They compared women according to where they lived, their education and their household wealth.
+
+They found that maternal healthcare utilisation was not equally distributed.
+
+Poorer women, women with less education, rural women and women living in the North West and North East generally had lower utilisation.
+
+This study helped me understand that looking only at a national average can hide important differences between groups.
+
+For example, maternal healthcare utilisation in Nigeria may improve overall while some regions or socioeconomic groups remain far behind.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it provides Nigeria-specific evidence of geographical and socioeconomic inequalities in skilled birth attendance and related maternal healthcare services.
+
+My proposed research intends to develop a model for predicting non-use of skilled birth attendance using the 2023–24 NDHS.
+
+If skilled birth attendance already differs substantially across geographical and socioeconomic groups, evaluating only the overall performance of my predictive model may hide important differences.
+
+For example, a model could perform well overall but perform less effectively for women in a particular geopolitical zone, wealth group or place of residence.
+
+This study therefore provides public-health justification for considering subgroup performance when evaluating my proposed model.
+
+### Differences From My Research
+
+This study did not develop a machine-learning prediction model.
+
+Its main objective was to measure geographical and socioeconomic inequalities in maternal healthcare utilisation.
+
+It also used NDHS surveys from 2003 to 2018, whereas my proposed research will use the newer 2023–24 NDHS.
+
+The study examined inequalities in the healthcare outcomes themselves.
+
+My proposed research intends to additionally investigate whether the performance of a prediction model differs across important geographical and socioeconomic groups.
+
+These are related but different questions.
+
+An outcome being less common in one group does not automatically mean that a predictive model performs poorly for that group.
+
+Therefore, my proposed subgroup evaluation will focus on model performance rather than only differences in SBA prevalence.
+
+### Limitations / Research Gap Identified
+
+The study used repeated cross-sectional DHS surveys rather than following the same women over time.
+
+It was also limited to variables available within the DHS datasets.
+
+The analysis focused on population-level inequalities in maternal healthcare utilisation rather than individual-level prediction.
+
+The most recent NDHS included was the 2018 survey, so the study does not describe inequalities using the newer 2023–24 NDHS.
+
+Most importantly for my proposed research, the study evaluated inequalities in maternal healthcare utilisation but did not evaluate whether a predictive model performs consistently across geographical and socioeconomic groups.
+
+This provides important motivation for considering subgroup model performance in my research.
+
+However, whether this represents a clear research gap will only be concluded after the remaining literature has been reviewed.
+
+### Important Variables / Groups Examined
+
+Important dimensions of inequality included:
+
+- Maternal education
+- Household wealth
+- Urban/rural residence
+- Geopolitical zone
+
+The study compared Nigeria's six geopolitical zones and examined socioeconomic inequalities based particularly on education and household wealth.
+
+### Pre-Delivery Variables Only?
+
+This was not designed as a pre-delivery prediction study.
+
+However, the main characteristics used to define inequalities could be known before childbirth:
+
+- Education
+- Household wealth
+- Place of residence
+- Geopolitical zone
+
+These characteristics may therefore be relevant both as candidate predictors and as possible groups for evaluating model performance in my proposed research.
+
+The final subgroup variables will only be selected after examining the 2023–24 NDHS and completing the literature review.
+
+### Model Evaluation
+
+This was not a machine-learning prediction study.
+
+- Main approach: Inequality analysis
+- Urban/rural inequality: Rate ratios and rate differences
+- Geographical inequality: Theil Index and between-group variance
+- Education/wealth inequality: Relative and absolute concentration indices
+- Machine-learning models: No
+- Accuracy: Not applicable
+- Precision: Not applicable
+- Recall: Not applicable
+- F1-score: Not applicable
+- ROC-AUC: Not applicable
+- Calibration: Not applicable
+- SHAP/explainable ML: No
+- Main focus: Geographical and socioeconomic inequalities in maternal healthcare utilisation
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] DHS survey rounds verified
+- [x] Study population verified
+- [x] Maternal healthcare outcomes verified
+- [x] Inequality measures verified
+- [x] Main findings verified
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Okoli, C., Hajizadeh, M., Rahman, M. M., & Khanam, R. (2020). Geographical and socioeconomic inequalities in the utilization of maternal healthcare services in Nigeria: 2003–2017. BMC Health Services Research, 20, 849. https://doi.org/10.1186/s12913-020-05700-w
+
+### DOI / Original Publication
+
+https://doi.org/10.1186/s12913-020-05700-w
+
+---
+
+## Study 8: Doctor et al. (2020)
+
+### Paper Title
+
+Prevalence, Trends, and Drivers of the Utilization of Unskilled Birth Attendants during Democratic Governance in Nigeria from 1999 to 2018
+
+### Publication Status
+
+Peer-reviewed journal article.
+
+### Country / Study Setting
+
+Nigeria.
+
+### Dataset
+
+The study used data from five Nigeria Demographic and Health Survey rounds:
+
+- 1999 NDHS
+- 2003 NDHS
+- 2008 NDHS
+- 2013 NDHS
+- 2018 NDHS
+
+The study examined births assisted by traditional birth attendants and other unskilled birth attendants.
+
+### Purpose of the Study
+
+The study aimed to examine the prevalence and trends in the use of unskilled birth attendants in Nigeria and identify factors associated with their utilisation.
+
+The researchers distinguished between:
+
+- Traditional birth attendants (TBAs)
+- Other unskilled birth attendants
+
+This allowed them to examine not only whether women received skilled care but also the types of unskilled assistance used during childbirth.
+
+### Methods Used
+
+The researchers analysed nationally representative Nigeria DHS data from multiple survey years.
+
+Descriptive analyses were used to examine changes in the prevalence of different types of birth attendants over time.
+
+Multivariable multinomial logistic regression was used to identify factors associated with the use of traditional birth attendants and other unskilled birth attendants.
+
+The analysis considered demographic, socioeconomic, healthcare-access and women's empowerment characteristics.
+
+### Main Findings
+
+The study found that the use of traditional birth attendants remained relatively stable over the study period.
+
+Traditional birth attendant use was approximately:
+
+- 20.7% in 1999
+- 20.5% in 2018
+
+This suggests that the proportion of births assisted by traditional birth attendants changed very little over almost two decades.
+
+The use of other unskilled birth attendants declined over time but remained substantial.
+
+Several characteristics were associated with the use of unskilled birth attendants.
+
+Factors associated with lower likelihood of using unskilled attendants included:
+
+- Higher maternal and paternal education
+- Greater household wealth
+- Maternal employment
+- Four or more antenatal care visits
+- Better proximity to healthcare facilities
+- Greater female autonomy
+
+Geographical region, rural residence and other maternal and reproductive characteristics were also associated with the type of birth attendant used.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand which Nigerian women were giving birth with assistance from people who were not classified as skilled birth attendants.
+
+They also wanted to know whether this situation had improved over time.
+
+One important finding was that the use of traditional birth attendants changed very little between 1999 and 2018.
+
+The study also showed that women's circumstances mattered.
+
+Women with more education, greater household wealth, adequate antenatal care, better healthcare access and greater decision-making autonomy were generally less likely to use unskilled birth attendants.
+
+This helped me understand that non-use of skilled birth attendance is connected not only to healthcare availability but also to socioeconomic circumstances and women's ability to make healthcare decisions.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it focuses specifically on Nigeria and examines the unskilled side of childbirth assistance.
+
+My proposed research focuses on predicting non-use of skilled birth attendance.
+
+Therefore, understanding the characteristics associated with the use of unskilled attendants provides useful background evidence about the population I am interested in identifying.
+
+The study also uses Nigeria DHS data and identifies several factors that could potentially be available before childbirth, including education, wealth, residence, region, antenatal care, healthcare access and women's autonomy.
+
+These factors can be investigated as potential candidate predictors when I examine the 2023–24 NDHS.
+
+The finding concerning women's autonomy is particularly useful because it suggests that decision-making power may provide information beyond commonly examined socioeconomic variables such as education and wealth.
+
+### Differences From My Research
+
+This study examined trends and factors associated with the use of different types of unskilled birth attendants.
+
+My proposed research will construct an outcome based on the 2023–24 NDHS definition of skilled birth attendance and predict non-use of skilled attendance.
+
+Therefore, the outcome definitions are closely related but should not automatically be treated as identical.
+
+The study also focused primarily on statistical associations using multinomial logistic regression rather than developing and evaluating several machine-learning prediction models.
+
+It used surveys ending with the 2018 NDHS, whereas my research will use the newer 2023–24 NDHS.
+
+My proposed study will also focus specifically on information that could reasonably be known before the delivery being predicted.
+
+### Limitations / Research Gap Identified
+
+The study relied on repeated cross-sectional DHS surveys rather than following the same women over time.
+
+DHS information is partly self-reported and may therefore be affected by recall and reporting bias.
+
+The analysis was also limited to variables available in the DHS.
+
+The study examined associations with unskilled birth-attendant utilisation rather than developing a prospective-style prediction model using only information available before delivery.
+
+Its most recent dataset was the 2018 NDHS, so it does not describe the situation captured by the 2023–24 Nigeria DHS.
+
+Another important consideration for my research is outcome definition.
+
+Use of a traditional or other unskilled birth attendant in this study should not simply be copied as my definition of non-use of skilled birth attendance.
+
+My outcome will instead be constructed according to the skilled-provider definition used in the 2023–24 NDHS.
+
+### Important Variables / Factors Examined
+
+Important factors included:
+
+- Maternal education
+- Paternal education
+- Household wealth
+- Maternal employment
+- Antenatal care attendance
+- Urban/rural residence
+- Geographical region
+- Healthcare accessibility
+- Maternal age
+- Reproductive characteristics
+- Women's autonomy and decision-making
+
+### Pre-Delivery Variables Only?
+
+This was not specifically designed as a pre-delivery prediction study.
+
+However, many of the characteristics identified could potentially be known before childbirth, including:
+
+- Education
+- Household wealth
+- Employment
+- Residence
+- Region
+- Antenatal care history
+- Healthcare access
+- Maternal age
+- Women's decision-making/autonomy
+
+Each variable will still need to be checked carefully in the 2023–24 NDHS to determine whether it was measured in a way that makes it appropriate for predicting the specific index delivery.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Multivariable multinomial logistic regression
+- Machine-learning model comparison: No
+- Accuracy: Not applicable as a main evaluation
+- Precision: Not applicable as a main evaluation
+- Recall: Not applicable as a main evaluation
+- F1-score: Not applicable as a main evaluation
+- ROC-AUC: Not applicable as a main evaluation
+- Calibration: Not a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Trends and factors associated with use of unskilled birth attendants
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] DHS survey rounds verified
+- [x] Outcome categories verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Important factors reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Doctor, H. V., Radovich, E., Benova, L., et al. (2020). Prevalence, trends, and drivers of the utilization of unskilled birth attendants during democratic governance in Nigeria from 1999 to 2018. International Journal of Environmental Research and Public Health, 17(1), 372.
+
+### DOI / Original Publication
+
+https://doi.org/10.3390/ijerph17010372
+
+---
+
+## Study 9: Solanke and Rahman (2018)
+
+### Paper Title
+
+Multilevel Analysis of Factors Associated with Assistance During Delivery in Rural Nigeria: Implications for Reducing Rural-Urban Inequity in Skilled Care at Delivery
+
+### Publication Status
+
+Peer-reviewed research article published in BMC Pregnancy and Childbirth.
+
+### Country / Study Setting
+
+Nigeria, specifically women living in rural areas.
+
+### Dataset
+
+The study used data from the 2013 Nigeria Demographic and Health Survey (NDHS).
+
+The analysis included a weighted sample of 12,665 rural women.
+
+The outcome was assistance during the woman's most recent delivery, classified as:
+
+- Skilled assistance
+- Unskilled assistance
+
+### Purpose of the Study
+
+The study aimed to investigate both individual-level and community-level factors associated with skilled assistance during delivery among women living in rural Nigeria.
+
+The researchers wanted to go beyond examining only characteristics of individual women and determine whether characteristics of the communities where women lived also contributed to differences in skilled birth attendance.
+
+### Methods Used
+
+The researchers used mixed-effects logistic regression.
+
+This type of analysis allowed them to examine factors operating at two levels:
+
+1. Individual-level characteristics
+2. Community-level characteristics
+
+Individual-level characteristics included:
+
+- Maternal education
+- Parity
+- Age at first birth
+- Religion
+- Participation in healthcare decisions
+- Employment status
+- Access to mass media
+- Means of transportation
+
+Community-level characteristics included:
+
+- Community literacy level
+- Community childcare burden
+- Proportion of women employed outside agriculture
+- Community perception of distance to a healthcare facility
+- Community poverty level
+- Geographical region
+
+The researchers also used the Intra-Class Correlation (ICC) to determine whether differences between communities contributed meaningfully to differences in skilled assistance.
+
+### Main Findings
+
+Only 23.0% of rural women used skilled assistance during their most recent delivery.
+
+Approximately 77.0% used unskilled assistance.
+
+Important individual-level factors associated with skilled assistance included:
+
+- Maternal education
+- Parity
+- Religion
+- Participation in healthcare decisions
+- Access to mass media
+- Means of transportation
+
+Important community-level factors included:
+
+- Community literacy level
+- Community poverty level
+- Community perception of distance to a healthcare facility
+- Geographical region
+
+The Intra-Class Correlation results also supported the presence of significant community-level differences in skilled assistance.
+
+For example, women who participated in decisions about their own healthcare were more likely to use skilled assistance than women who did not participate in those decisions.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand why some women living in rural Nigeria had skilled assistance during childbirth while others did not.
+
+Instead of looking only at the individual woman, they also considered the type of community in which she lived.
+
+The study found that only about 23% of rural women had skilled assistance during their most recent delivery, while about 77% had unskilled assistance.
+
+A woman's education, number of previous births, religion, involvement in healthcare decisions, access to media and means of transportation were important.
+
+However, the community also mattered.
+
+Women living in communities with different levels of poverty, literacy, healthcare accessibility and geographical location had different likelihoods of using skilled assistance.
+
+This helped me understand that skilled birth attendance may be influenced by both personal circumstances and the wider environment in which a woman lives.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it focuses specifically on Nigeria and examines skilled versus unskilled assistance during childbirth.
+
+It also uses NDHS data.
+
+The study shows that information about the individual woman may not provide the complete picture when investigating non-use of skilled birth attendance.
+
+Community and geographical characteristics may also contain important information.
+
+This is relevant when I examine potential predictors in the 2023–24 NDHS.
+
+The study also identifies several factors that could potentially be available before delivery, including education, parity, healthcare decision-making, media exposure, transportation and geographical characteristics.
+
+It therefore provides useful evidence for considering both individual and contextual information when developing my prediction model.
+
+### Differences From My Research
+
+The study used the 2013 NDHS, while my proposed research will use the newer 2023–24 NDHS.
+
+It included only women living in rural Nigeria, whereas my proposed research intends to study the eligible Nigerian population more broadly.
+
+The study primarily investigated statistical associations using mixed-effects logistic regression.
+
+My proposed research will focus on predicting non-use of skilled birth attendance using information available before childbirth.
+
+I also intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate model performance across important geographical and socioeconomic groups.
+
+Therefore, this study mainly asks:
+
+"Which individual and community characteristics are associated with skilled assistance among rural Nigerian women?"
+
+My research asks:
+
+"How well can pre-delivery information predict non-use of skilled birth attendance in Nigeria, and how reliably does the model perform across different groups?"
+
+### Limitations / Research Gap Identified
+
+The study used cross-sectional DHS data, so the identified relationships should not automatically be interpreted as causal.
+
+The study focused only on rural women, which limits its ability to represent all Nigerian women.
+
+It also used the 2013 NDHS, so the findings may not represent patterns in the newer 2023–24 NDHS.
+
+The research focused on associations rather than developing and evaluating a machine-learning prediction model.
+
+Another important consideration is that some community-level variables were constructed by aggregating information from women within DHS communities rather than being simple variables directly available in the dataset.
+
+Therefore, if I consider similar community-level predictors, I will need to determine carefully how they were constructed and whether they can be reproduced appropriately using the 2023–24 NDHS.
+
+### Important Variables / Factors Examined
+
+#### Individual-Level Factors
+
+- Maternal education
+- Parity
+- Age at first birth
+- Religion
+- Healthcare decision-making
+- Employment status
+- Access to mass media
+- Means of transportation
+
+#### Community-Level Factors
+
+- Community literacy
+- Community poverty
+- Community childcare burden
+- Employment outside agriculture
+- Community perception of distance to healthcare
+- Geographical region
+
+### Pre-Delivery Variables Only?
+
+This was not specifically designed as a pre-delivery prediction study.
+
+However, many of the characteristics examined could potentially be known before childbirth, including:
+
+- Maternal education
+- Parity
+- Religion
+- Healthcare decision-making
+- Media exposure
+- Transportation
+- Community poverty
+- Community literacy
+- Geographical region
+
+However, the timing and construction of every candidate variable will need to be checked carefully before it can be included in my proposed prediction model.
+
+Community-level variables will require particular attention because some were derived by aggregating information from respondents within DHS communities.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Mixed-effects logistic regression
+- Individual-level analysis: Yes
+- Community-level analysis: Yes
+- Community clustering assessed: Yes, using Intra-Class Correlation
+- Machine-learning model comparison: No
+- Accuracy: Not a main evaluation
+- Precision: Not a main evaluation
+- Recall: Not a main evaluation
+- F1-score: Not a main evaluation
+- ROC-AUC: Not a main evaluation
+- Calibration: Not a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Individual and community factors associated with skilled assistance
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Dataset and sample verified
+- [x] Outcome definition verified
+- [x] Individual-level variables verified
+- [x] Community-level variables verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Solanke, B. L., & Rahman, S. A. (2018). Multilevel analysis of factors associated with assistance during delivery in rural Nigeria: Implications for reducing rural-urban inequity in skilled care at delivery. BMC Pregnancy and Childbirth, 18, 438. https://doi.org/10.1186/s12884-018-2074-9
+
+### DOI / Original Publication
+
+https://doi.org/10.1186/s12884-018-2074-9
+
+---
+
+## Study 10: Adedini et al. (2017)
+
+### Paper Title
+
+Trends and Drivers of Skilled Birth Attendant Use in Nigeria (1990–2013): Policy Implications for Child and Maternal Health
+
+### Publication Status
+
+Peer-reviewed journal article.
+
+### Country / Study Setting
+
+Nigeria.
+
+### Dataset
+
+The study used data from four Nigeria Demographic and Health Survey rounds:
+
+- 1990 NDHS
+- 2003 NDHS
+- 2008 NDHS
+- 2013 NDHS
+
+The study examined changes in skilled birth attendant use over time and factors associated with the use of skilled assistance during childbirth.
+
+### Purpose of the Study
+
+The study aimed to examine trends in the use of skilled birth attendants in Nigeria and identify factors associated with whether women used skilled assistance during childbirth.
+
+The researchers were particularly interested in understanding the demographic, socioeconomic, geographical and women's empowerment characteristics associated with skilled birth attendant use.
+
+### Methods Used
+
+The researchers analysed nationally representative Nigeria DHS data from multiple survey years.
+
+Descriptive analysis was used to examine changes in skilled birth attendant use over time.
+
+Logistic regression analysis was used to investigate factors associated with skilled birth attendant utilisation while accounting for other characteristics.
+
+The analysis considered factors such as:
+
+- Maternal education
+- Household wealth
+- Religion
+- Ethnicity
+- Urban/rural residence
+- Geopolitical zone
+- Employment
+- Antenatal care
+- Birth order
+- Women's involvement in healthcare decision-making
+
+### Main Findings
+
+Skilled birth attendant utilisation increased only modestly over the study period.
+
+SBA use increased from approximately:
+
+- 32.4% in 1990
+- 38.5% in 2013
+
+Maternal education was strongly associated with skilled birth attendant use.
+
+Women with education had substantially higher odds of using skilled birth attendants than women without education.
+
+The study reported an adjusted odds ratio of approximately 3.09 for education.
+
+Geographical and sociocultural characteristics, including place of residence, geopolitical zone, religion and ethnicity, were also associated with skilled birth attendant use.
+
+Women's involvement in healthcare decision-making was another important factor.
+
+Women who participated in decisions concerning their healthcare were more likely to use skilled birth attendants.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand whether skilled birth attendance had improved in Nigeria over time and why some women were more likely to use skilled birth attendants than others.
+
+They compared four Nigeria DHS surveys covering more than two decades.
+
+Although skilled birth attendant use increased, the improvement was relatively small, from about 32.4% in 1990 to 38.5% in 2013.
+
+Education was one of the important factors. Women with education were more likely to use skilled birth attendants.
+
+Where women lived and their social circumstances also mattered.
+
+Another important finding was women's involvement in healthcare decisions. Women who participated in decisions about their own healthcare were more likely to use skilled birth attendants.
+
+This helped me understand that maternal healthcare utilisation may depend not only on education, wealth and healthcare access but also on whether women have the ability to participate in decisions concerning their own healthcare.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it focuses specifically on Nigeria, uses NDHS data and investigates skilled birth attendant use.
+
+It provides additional Nigeria-specific evidence about characteristics that may be related to skilled birth attendance.
+
+It also strengthens evidence from other studies I have reviewed showing the potential importance of women's autonomy and healthcare decision-making.
+
+Studies 8 and 9 also identified women's autonomy or participation in healthcare decisions as relevant factors.
+
+Therefore, when reviewing the 2023–24 NDHS variables, I should investigate whether appropriate decision-making or women's empowerment variables are available and whether they meet my pre-delivery requirement.
+
+The study also provides historical context showing that skilled birth attendance in Nigeria has changed over time, supporting the importance of examining the newer 2023–24 NDHS rather than assuming that relationships identified in older surveys remain unchanged.
+
+### Differences From My Research
+
+This study focused mainly on trends and factors statistically associated with skilled birth attendant use.
+
+It did not primarily develop a machine-learning prediction model.
+
+The study used NDHS data up to 2013, whereas my proposed research will use the newer 2023–24 NDHS.
+
+My proposed research will focus specifically on predicting non-use of skilled birth attendance using information that could reasonably be known before childbirth.
+
+I also intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate whether model performance differs across important geographical and socioeconomic groups.
+
+Therefore, this study mainly asks:
+
+"How has skilled birth attendant use changed in Nigeria, and which characteristics are associated with its utilisation?"
+
+My proposed research asks:
+
+"How well can information available before childbirth predict non-use of skilled birth attendance using the 2023–24 NDHS?"
+
+### Limitations / Research Gap Identified
+
+The study used repeated cross-sectional DHS data rather than following the same women over time.
+
+The identified associations should therefore not automatically be interpreted as causal relationships.
+
+The study also relied on secondary and partly self-reported DHS information, which may be affected by recall or reporting bias.
+
+The most recent survey included was the 2013 NDHS, so the study does not represent the situation captured by the newer 2023–24 NDHS.
+
+The study focused mainly on statistical associations and trends rather than developing and evaluating a machine-learning prediction model.
+
+For my research, another important issue is predictor timing.
+
+Some maternal-history variables may appear useful for prediction, but I will need to verify exactly what each NDHS variable represents and whether that information would genuinely have been known before the specific delivery being predicted.
+
+This is necessary to prevent data leakage.
+
+### Important Variables / Factors Examined
+
+Important factors included:
+
+- Maternal education
+- Household wealth
+- Religion
+- Ethnicity
+- Urban/rural residence
+- Geopolitical zone
+- Employment
+- Antenatal care
+- Birth order
+- Women's healthcare decision-making
+- Previous maternal healthcare utilisation
+
+### Pre-Delivery Variables Only?
+
+This study was not specifically designed as a pre-delivery prediction study.
+
+However, several characteristics examined could potentially be known before childbirth, including:
+
+- Maternal education
+- Household wealth
+- Religion
+- Ethnicity
+- Residence
+- Geopolitical zone
+- Employment
+- Antenatal care history
+- Birth order
+- Healthcare decision-making
+
+Previous birth or healthcare history may also potentially provide pre-delivery information, but this will require careful checking.
+
+For every candidate predictor, I will verify whether it refers to information that occurred before the specific delivery being predicted.
+
+Variables referring to the same delivery or information only known during or after delivery will not be included in the main pre-delivery prediction model.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical approach: Descriptive analysis and logistic regression
+- Machine-learning model comparison: No
+- Accuracy: Not a main evaluation
+- Precision: Not a main evaluation
+- Recall: Not a main evaluation
+- F1-score: Not a main evaluation
+- ROC-AUC: Not a main evaluation
+- PR-AUC: Not a main evaluation
+- Calibration: Not a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Trends and factors associated with skilled birth attendant use
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] DHS survey rounds verified
+- [x] Outcome verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Important factors reviewed
+- [x] Limitations reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Adedini, S. A., Odimegwu, C., Bamiwuye, O., Fadeyibi, O., & De Wet, N. (2017). Trends and drivers of skilled birth attendant use in Nigeria (1990–2013): Policy implications for child and maternal health. International Perspectives on Sexual and Reproductive Health, 43(1), 25–40.
+
+### DOI / Original Publication
+
+https://doi.org/10.1363/43e2417
+
+---
+## Study 11: Negash and Wubneh (2025)
+
+### Paper Title
+
+Skilled Birth Attendance and Its Associated Factors in Chad and Nigeria: A Multilevel Analysis of DHS Data
+
+### Publication Status
+
+Peer-reviewed research article published in PLOS Global Public Health.
+
+### Country / Study Setting
+
+Chad and Nigeria.
+
+### Dataset
+
+The study used recent Demographic and Health Survey data from Chad and Nigeria.
+
+The researchers combined eligible observations from the two countries to investigate skilled birth attendance and factors associated with its use.
+
+### Purpose of the Study
+
+The study aimed to determine the prevalence of skilled birth attendance and identify individual-level and community-level factors associated with skilled birth attendance in Chad and Nigeria.
+
+The researchers used a multilevel approach because women living within the same communities may share characteristics and healthcare environments that influence maternal healthcare utilisation.
+
+### Methods Used
+
+The researchers used multilevel logistic regression.
+
+This allowed them to examine factors operating at both:
+
+- Individual level
+- Community level
+
+The analysis considered demographic, socioeconomic, healthcare-use and community characteristics.
+
+The researchers reported adjusted odds ratios with confidence intervals to identify factors independently associated with skilled birth attendance.
+
+### Main Findings
+
+Overall skilled birth attendance in the combined study population was approximately 41.9%.
+
+Several characteristics were significantly associated with skilled birth attendance.
+
+Antenatal care was particularly important.
+
+Women who had antenatal care visits had substantially higher odds of receiving skilled birth attendance.
+
+The study reported an adjusted odds ratio of approximately 5.56 for antenatal care.
+
+Maternal education was also associated with higher skilled birth attendance.
+
+Reported adjusted odds ratios included approximately:
+
+- Primary education: 1.77
+- Secondary education: 4.06
+
+Household wealth was also associated with skilled birth attendance.
+
+Women exposed to media had higher odds of skilled birth attendance, with an adjusted odds ratio of approximately 1.50.
+
+Community-level education was also important, with an adjusted odds ratio of approximately 2.73.
+
+Other factors relating to residence and healthcare accessibility were also associated with skilled birth attendance.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand why some women in Nigeria and Chad received skilled assistance during childbirth while others did not.
+
+They looked not only at characteristics of individual women but also at characteristics of the communities in which the women lived.
+
+The study found that antenatal care was strongly associated with skilled birth attendance.
+
+Education, household wealth, media exposure and community education were also important.
+
+This helped me understand that skilled birth attendance may be influenced by both a woman's personal circumstances and the wider environment in which she lives.
+
+It also provides more recent evidence that factors such as antenatal care, education, wealth and community characteristics continue to be relevant when studying skilled birth attendance.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because Nigeria was included, DHS data were used and the outcome was skilled birth attendance.
+
+It also provides recent peer-reviewed evidence about individual and community characteristics associated with skilled birth attendance.
+
+Several of the important characteristics identified could potentially be available before childbirth, including:
+
+- Maternal education
+- Household wealth
+- Antenatal care
+- Media exposure
+- Residence
+- Healthcare accessibility
+- Community education
+
+The findings therefore provide useful evidence for variables that I may investigate when reviewing the 2023–24 Nigeria DHS.
+
+The study also reinforces evidence from earlier papers that contextual and community characteristics may provide useful information beyond individual-level characteristics.
+
+### Differences From My Research
+
+The study combined data from Chad and Nigeria rather than developing a Nigeria-only analysis.
+
+It primarily focused on identifying factors statistically associated with skilled birth attendance using multilevel regression.
+
+My proposed research will focus specifically on Nigeria using the 2023–24 NDHS.
+
+My primary objective is to investigate whether information available before childbirth can predict non-use of skilled birth attendance.
+
+I also intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate whether model performance differs across important geographical and socioeconomic groups.
+
+Therefore, this study mainly asks:
+
+"Which individual and community factors are associated with skilled birth attendance in Chad and Nigeria?"
+
+My proposed research asks:
+
+"How well can pre-delivery information predict non-use of skilled birth attendance specifically in Nigeria using the 2023–24 NDHS?"
+
+### Limitations / Research Gap Identified
+
+The study used cross-sectional DHS data, so associations should not automatically be interpreted as causal relationships.
+
+Some DHS variables are based on self-reported information and may therefore be affected by recall or reporting bias.
+
+The study combined Nigeria and Chad, meaning that the results do not represent a Nigeria-specific predictive model.
+
+The study also focused primarily on association rather than developing and evaluating machine-learning models for prediction.
+
+For my proposed research, another important issue is predictor timing.
+
+Although antenatal care and several other characteristics could potentially be known before childbirth, I will need to define the prediction point carefully.
+
+For example, the use of total antenatal care visits may be appropriate if prediction occurs late in pregnancy before delivery, but it would not be available if the intended prediction point were early pregnancy.
+
+Therefore, the exact timing and definition of every candidate predictor will be reviewed before modelling.
+
+### Important Variables / Factors Identified
+
+Important factors included:
+
+- Antenatal care
+- Maternal education
+- Household wealth
+- Media exposure
+- Place of residence
+- Healthcare accessibility
+- Community-level education
+- Other individual and community characteristics
+
+### Pre-Delivery Variables Only?
+
+The study was not specifically designed as a pre-delivery prediction study.
+
+However, several important characteristics could potentially be known before childbirth.
+
+These include:
+
+- Maternal education
+- Household wealth
+- Residence
+- Media exposure
+- Community education
+- Healthcare accessibility
+
+Antenatal care may also represent pre-delivery information, but its suitability depends on the exact prediction point used in my research.
+
+Therefore, each variable will be assessed carefully to ensure that it was genuinely available before the delivery being predicted and does not introduce data leakage.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Multilevel logistic regression
+- Individual-level factors examined: Yes
+- Community-level factors examined: Yes
+- Machine-learning model comparison: No
+- Accuracy: Not a main evaluation
+- Precision: Not a main evaluation
+- Recall: Not a main evaluation
+- F1-score: Not a main evaluation
+- ROC-AUC: Not a main evaluation
+- PR-AUC: Not a main evaluation
+- Calibration: Not a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Factors associated with skilled birth attendance
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Countries verified
+- [x] DHS data source verified
+- [x] Outcome verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Individual and community factors reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Negash, W. D., & Wubneh, H. D. (2025). Skilled birth attendance and its associated factors in Chad and Nigeria: A multilevel analysis of DHS data. PLOS Global Public Health.
+
+### DOI / Original Publication
+
+https://doi.org/10.1371/journal.pgph.0005290
+---
+## Study 12: Akpiroroh et al. (2026)
+
+### Paper Title
+
+Hierarchical Logistic Regression Analysis of Skilled Birth Attendance in Northern Nigeria Using Andersen’s Behavioural Model
+
+### Publication Status
+
+Peer-reviewed research article published in Discover Public Health.
+
+### Country / Study Setting
+
+Northern Nigeria.
+
+The study was conducted across six northern Nigerian states:
+
+- Jigawa
+- Bauchi
+- Niger
+- Katsina
+- Kaduna
+- Kano
+
+### Dataset
+
+Unlike many of the other studies reviewed in this project, this study did not use DHS data.
+
+The researchers collected primary survey data in July 2025 using a structured interviewer-administered questionnaire.
+
+The study included 1,004 women aged 15–49 years who had experienced at least one live birth during the five years preceding the survey.
+
+Women were recruited from rural and urban communities across the six selected northern Nigerian states.
+
+### Purpose of the Study
+
+The study aimed to examine factors associated with skilled birth service utilisation among women in Northern Nigeria.
+
+The researchers investigated two related outcomes:
+
+- Skilled birth attendance
+- Place of delivery
+
+Skilled birth attendance was defined as childbirth assisted by a trained health professional, regardless of where the delivery occurred.
+
+Place of delivery was examined separately as health-facility delivery versus home delivery.
+
+The researchers used Andersen’s Behavioural Model of Health Service Use to organise the factors that could influence maternal healthcare utilisation.
+
+### Methods Used
+
+The study used a cross-sectional analytical design.
+
+Hierarchical logistic regression was used to examine factors associated with skilled birth attendance and place of delivery.
+
+Andersen’s Behavioural Model organised explanatory variables into three groups:
+
+1. Predisposing factors
+2. Enabling factors
+3. Need factors
+
+Predisposing factors included characteristics such as:
+
+- Maternal age
+- Marital status
+- Education
+- Religion
+- Place of residence
+- Year of last birth
+
+Enabling factors included:
+
+- Women's occupation
+- Personal and household income
+- Partner's education
+- Partner's occupation
+- Family support
+- Transportation
+- Phone ownership
+- Other healthcare-access characteristics
+
+Need factors included:
+
+- Antenatal care attendance
+- Number of ANC visits
+- Satisfaction with ANC
+- Delivery complications
+- Newborn complications
+
+Variables were entered into the regression models hierarchically according to these conceptual groups.
+
+### Main Findings
+
+Overall, 72.8% of the women reported receiving skilled birth assistance, while 27.2% did not.
+
+At the bivariate level, phone ownership and satisfaction with antenatal care were associated with healthcare delivery assistance.
+
+However, some of these relationships were no longer statistically significant after adjustment for other characteristics.
+
+In the hierarchical regression analysis, partner's education and previous place of delivery remained significantly associated with healthcare delivery assistance after adjustment.
+
+For place of delivery, several characteristics showed associations before adjustment, including:
+
+- Education
+- Year of last delivery
+- Partner's employment
+- Settlement type
+- Mode of transportation
+- Phone ownership
+
+After adjustment, year of last delivery and phone ownership remained significantly associated with place of delivery.
+
+The researchers also found that adding enabling factors substantially improved the explanatory performance of the skilled birth-attendance model.
+
+This suggested that household resources and access-related characteristics contributed important information beyond women's basic sociodemographic characteristics.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand why some women in Northern Nigeria received skilled assistance during childbirth while others did not.
+
+Instead of putting all possible factors together without any structure, they organised them into three groups.
+
+Predisposing factors describe a woman's background.
+
+Enabling factors describe resources and circumstances that may make healthcare easier or harder to access.
+
+Need factors describe pregnancy-related healthcare needs and experiences.
+
+The researchers then added these groups to the statistical model step by step.
+
+One important thing I learned from this paper is that a factor can appear important when examined by itself but become less important after other characteristics are considered.
+
+For example, phone ownership and ANC satisfaction showed associations with skilled assistance in the initial analysis, but these associations did not remain significant after adjustment.
+
+This reminds me that relationships between maternal-health characteristics can overlap and should be interpreted carefully.
+
+### Relevance to My Research
+
+This study is relevant to my research because it is a recent Nigeria-specific study examining skilled birth attendance.
+
+It is particularly useful because it focuses on Northern Nigeria, where skilled birth attendance remains an important maternal-health challenge.
+
+The study also provides a useful framework for thinking about potential predictors.
+
+Rather than selecting variables simply because they are available, Andersen's Behavioural Model demonstrates how maternal-health characteristics can be organised into meaningful groups such as:
+
+- Predisposing characteristics
+- Enabling/access characteristics
+- Need-related characteristics
+
+This could help me organise and justify candidate variables when developing my own data dictionary.
+
+The study also reinforces the importance of distinguishing skilled birth attendance from place of delivery. They are related outcomes, but they are not identical.
+
+### Differences From My Research
+
+This study did not use the Nigeria DHS.
+
+It collected primary survey data from 1,004 women in six northern Nigerian states.
+
+My proposed research will use the nationally representative 2023–24 Nigeria DHS.
+
+The study was also limited to selected states in Northern Nigeria, whereas my proposed research will examine Nigeria nationally.
+
+The researchers primarily used hierarchical logistic regression to investigate statistical associations.
+
+My research will focus on prediction of non-use of skilled birth attendance using information available before childbirth.
+
+I intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate model performance across important geographical and socioeconomic groups.
+
+### Important Predictor-Timing Issue
+
+One particularly important issue for my research is that this study used previous place of delivery as an important explanatory variable.
+
+Whether a variable like this is appropriate for my prediction model depends entirely on which birth it refers to.
+
+If it genuinely describes a delivery that occurred before the birth I am trying to predict, it could potentially represent valid maternal history.
+
+However, if it refers to the same delivery whose skilled attendance is being predicted, it would not be available before that delivery and could introduce data leakage.
+
+Therefore, I will not automatically copy predictors from this or any other study.
+
+Every candidate predictor will be checked against the 2023–24 NDHS documentation to determine exactly what it measures and when that information became available.
+
+### Limitations / Research Gap Identified
+
+The study used a cross-sectional design, so the reported relationships should be interpreted as associations rather than causal effects.
+
+The researchers used purposive and quota sampling rather than a nationally representative probability sample.
+
+The study was conducted in six selected northern states and therefore should not automatically be generalised to all Nigerian women.
+
+The sample size of 1,004 women was also much smaller than the nationally representative NDHS datasets used in several other studies reviewed.
+
+The study focused primarily on explanatory association rather than predictive machine-learning performance.
+
+It did not evaluate a national prediction model using the 2023–24 NDHS.
+
+For my research, the paper is therefore most useful for understanding recent Northern Nigerian evidence and for providing a theoretical framework for organising possible predictors.
+
+### Important Variables / Factors Examined
+
+Important characteristics examined included:
+
+- Maternal age
+- Education
+- Marital status
+- Religion
+- Place of residence
+- Income
+- Partner's education
+- Partner's employment
+- Phone ownership
+- Transportation
+- Family support
+- Antenatal care
+- ANC satisfaction
+- Previous place of delivery
+- Delivery complications
+
+### Pre-Delivery Variables Only?
+
+No.
+
+The study was not specifically designed to create a model using only information available before the delivery being predicted.
+
+Several variables could potentially represent pre-delivery information, including:
+
+- Maternal age
+- Education
+- Religion
+- Residence
+- Income
+- Partner's education
+- Partner's employment
+- Phone ownership
+- Transportation
+- Antenatal care information
+
+However, some variables require particular caution.
+
+Delivery complications and newborn complications would generally not be appropriate predictors for a model intended to make predictions before childbirth.
+
+Previous place of delivery may or may not be appropriate depending on whether it refers to an earlier birth or the index delivery.
+
+Therefore, predictor timing will need to be verified carefully in my proposed research.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Hierarchical logistic regression
+- Theoretical framework: Andersen's Behavioural Model of Health Service Use
+- Predisposing factors examined: Yes
+- Enabling factors examined: Yes
+- Need factors examined: Yes
+- Machine-learning model comparison: No
+- Accuracy: Not reported as a main evaluation
+- Precision: Not reported as a main evaluation
+- Recall: Not reported as a main evaluation
+- F1-score: Not reported as a main evaluation
+- ROC-AUC: Not reported as a main evaluation
+- PR-AUC: Not reported
+- Calibration: Not reported as a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Factors associated with SBA and place of delivery
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Study location verified
+- [x] Sample size verified
+- [x] Data source verified
+- [x] Outcome definitions verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Akpiroroh, E., Ebinim, H., Ajayi, M., Sabbath, U.-O., Jibril, J., Ehize, P., Ogunsanya, A., Unogu, C., Kolawole, D., Nto, S., Rauf, R., Ajibola, D., Atobatele, S., Sampson, S., & Okagbue, H. (2026). Hierarchical logistic regression analysis of skilled birth attendance in Northern Nigeria using Andersen's Behavioural Model. Discover Public Health, 23, 1512.
+
+### DOI / Original Publication
+
+https://doi.org/10.1186/s12982-026-02943-6
+
+---
+## Study 12: Akpiroroh et al. (2026)
+
+### Paper Title
+
+Hierarchical Logistic Regression Analysis of Skilled Birth Attendance in Northern Nigeria Using Andersen’s Behavioural Model
+
+### Publication Status
+
+Peer-reviewed research article published in Discover Public Health.
+
+### Country / Study Setting
+
+Northern Nigeria.
+
+The study was conducted across six northern Nigerian states:
+
+- Jigawa
+- Bauchi
+- Niger
+- Katsina
+- Kaduna
+- Kano
+
+### Dataset
+
+Unlike many of the other studies reviewed in this project, this study did not use DHS data.
+
+The researchers collected primary survey data in July 2025 using a structured interviewer-administered questionnaire.
+
+The study included 1,004 women aged 15–49 years who had experienced at least one live birth during the five years preceding the survey.
+
+Women were recruited from rural and urban communities across the six selected northern Nigerian states.
+
+### Purpose of the Study
+
+The study aimed to examine factors associated with skilled birth service utilisation among women in Northern Nigeria.
+
+The researchers investigated two related outcomes:
+
+- Skilled birth attendance
+- Place of delivery
+
+Skilled birth attendance was defined as childbirth assisted by a trained health professional, regardless of where the delivery occurred.
+
+Place of delivery was examined separately as health-facility delivery versus home delivery.
+
+The researchers used Andersen’s Behavioural Model of Health Service Use to organise the factors that could influence maternal healthcare utilisation.
+
+### Methods Used
+
+The study used a cross-sectional analytical design.
+
+Hierarchical logistic regression was used to examine factors associated with skilled birth attendance and place of delivery.
+
+Andersen’s Behavioural Model organised explanatory variables into three groups:
+
+1. Predisposing factors
+2. Enabling factors
+3. Need factors
+
+Predisposing factors included characteristics such as:
+
+- Maternal age
+- Marital status
+- Education
+- Religion
+- Place of residence
+- Year of last birth
+
+Enabling factors included:
+
+- Women's occupation
+- Personal and household income
+- Partner's education
+- Partner's occupation
+- Family support
+- Transportation
+- Phone ownership
+- Other healthcare-access characteristics
+
+Need factors included:
+
+- Antenatal care attendance
+- Number of ANC visits
+- Satisfaction with ANC
+- Delivery complications
+- Newborn complications
+
+Variables were entered into the regression models hierarchically according to these conceptual groups.
+
+### Main Findings
+
+Overall, 72.8% of the women reported receiving skilled birth assistance, while 27.2% did not.
+
+At the bivariate level, phone ownership and satisfaction with antenatal care were associated with healthcare delivery assistance.
+
+However, some of these relationships were no longer statistically significant after adjustment for other characteristics.
+
+In the hierarchical regression analysis, partner's education and previous place of delivery remained significantly associated with healthcare delivery assistance after adjustment.
+
+For place of delivery, several characteristics showed associations before adjustment, including:
+
+- Education
+- Year of last delivery
+- Partner's employment
+- Settlement type
+- Mode of transportation
+- Phone ownership
+
+After adjustment, year of last delivery and phone ownership remained significantly associated with place of delivery.
+
+The researchers also found that adding enabling factors substantially improved the explanatory performance of the skilled birth-attendance model.
+
+This suggested that household resources and access-related characteristics contributed important information beyond women's basic sociodemographic characteristics.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand why some women in Northern Nigeria received skilled assistance during childbirth while others did not.
+
+Instead of putting all possible factors together without any structure, they organised them into three groups.
+
+Predisposing factors describe a woman's background.
+
+Enabling factors describe resources and circumstances that may make healthcare easier or harder to access.
+
+Need factors describe pregnancy-related healthcare needs and experiences.
+
+The researchers then added these groups to the statistical model step by step.
+
+One important thing I learned from this paper is that a factor can appear important when examined by itself but become less important after other characteristics are considered.
+
+For example, phone ownership and ANC satisfaction showed associations with skilled assistance in the initial analysis, but these associations did not remain significant after adjustment.
+
+This reminds me that relationships between maternal-health characteristics can overlap and should be interpreted carefully.
+
+### Relevance to My Research
+
+This study is relevant to my research because it is a recent Nigeria-specific study examining skilled birth attendance.
+
+It is particularly useful because it focuses on Northern Nigeria, where skilled birth attendance remains an important maternal-health challenge.
+
+The study also provides a useful framework for thinking about potential predictors.
+
+Rather than selecting variables simply because they are available, Andersen's Behavioural Model demonstrates how maternal-health characteristics can be organised into meaningful groups such as:
+
+- Predisposing characteristics
+- Enabling/access characteristics
+- Need-related characteristics
+
+This could help me organise and justify candidate variables when developing my own data dictionary.
+
+The study also reinforces the importance of distinguishing skilled birth attendance from place of delivery. They are related outcomes, but they are not identical.
+
+### Differences From My Research
+
+This study did not use the Nigeria DHS.
+
+It collected primary survey data from 1,004 women in six northern Nigerian states.
+
+My proposed research will use the nationally representative 2023–24 Nigeria DHS.
+
+The study was also limited to selected states in Northern Nigeria, whereas my proposed research will examine Nigeria nationally.
+
+The researchers primarily used hierarchical logistic regression to investigate statistical associations.
+
+My research will focus on prediction of non-use of skilled birth attendance using information available before childbirth.
+
+I intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate model performance across important geographical and socioeconomic groups.
+
+### Important Predictor-Timing Issue
+
+One particularly important issue for my research is that this study used previous place of delivery as an important explanatory variable.
+
+Whether a variable like this is appropriate for my prediction model depends entirely on which birth it refers to.
+
+If it genuinely describes a delivery that occurred before the birth I am trying to predict, it could potentially represent valid maternal history.
+
+However, if it refers to the same delivery whose skilled attendance is being predicted, it would not be available before that delivery and could introduce data leakage.
+
+Therefore, I will not automatically copy predictors from this or any other study.
+
+Every candidate predictor will be checked against the 2023–24 NDHS documentation to determine exactly what it measures and when that information became available.
+
+### Limitations / Research Gap Identified
+
+The study used a cross-sectional design, so the reported relationships should be interpreted as associations rather than causal effects.
+
+The researchers used purposive and quota sampling rather than a nationally representative probability sample.
+
+The study was conducted in six selected northern states and therefore should not automatically be generalised to all Nigerian women.
+
+The sample size of 1,004 women was also much smaller than the nationally representative NDHS datasets used in several other studies reviewed.
+
+The study focused primarily on explanatory association rather than predictive machine-learning performance.
+
+It did not evaluate a national prediction model using the 2023–24 NDHS.
+
+For my research, the paper is therefore most useful for understanding recent Northern Nigerian evidence and for providing a theoretical framework for organising possible predictors.
+
+### Important Variables / Factors Examined
+
+Important characteristics examined included:
+
+- Maternal age
+- Education
+- Marital status
+- Religion
+- Place of residence
+- Income
+- Partner's education
+- Partner's employment
+- Phone ownership
+- Transportation
+- Family support
+- Antenatal care
+- ANC satisfaction
+- Previous place of delivery
+- Delivery complications
+
+### Pre-Delivery Variables Only?
+
+No.
+
+The study was not specifically designed to create a model using only information available before the delivery being predicted.
+
+Several variables could potentially represent pre-delivery information, including:
+
+- Maternal age
+- Education
+- Religion
+- Residence
+- Income
+- Partner's education
+- Partner's employment
+- Phone ownership
+- Transportation
+- Antenatal care information
+
+However, some variables require particular caution.
+
+Delivery complications and newborn complications would generally not be appropriate predictors for a model intended to make predictions before childbirth.
+
+Previous place of delivery may or may not be appropriate depending on whether it refers to an earlier birth or the index delivery.
+
+Therefore, predictor timing will need to be verified carefully in my proposed research.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Hierarchical logistic regression
+- Theoretical framework: Andersen's Behavioural Model of Health Service Use
+- Predisposing factors examined: Yes
+- Enabling factors examined: Yes
+- Need factors examined: Yes
+- Machine-learning model comparison: No
+- Accuracy: Not reported as a main evaluation
+- Precision: Not reported as a main evaluation
+- Recall: Not reported as a main evaluation
+- F1-score: Not reported as a main evaluation
+- ROC-AUC: Not reported as a main evaluation
+- PR-AUC: Not reported
+- Calibration: Not reported as a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Factors associated with SBA and place of delivery
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Study location verified
+- [x] Sample size verified
+- [x] Data source verified
+- [x] Outcome definitions verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Akpiroroh, E., Ebinim, H., Ajayi, M., Sabbath, U.-O., Jibril, J., Ehize, P., Ogunsanya, A., Unogu, C., Kolawole, D., Nto, S., Rauf, R., Ajibola, D., Atobatele, S., Sampson, S., & Okagbue, H. (2026). Hierarchical logistic regression analysis of skilled birth attendance in Northern Nigeria using Andersen's Behavioural Model. Discover Public Health, 23, 1512.
+
+### DOI / Original Publication
+
+https://doi.org/10.1186/s12982-026-02943-6
+---
+
 ## Review Progress
 
 - [x] Study 1
@@ -1168,9 +2814,9 @@ https://doi.org/10.1136/bmjopen-2021-051791
 - [x] Study 4
 - [x] Study 5
 - [x] Study 6
-- [ ] Study 7
-- [ ] Study 8
-- [ ] Study 9
-- [ ] Study 10
-- [ ] Study 11
-- [ ] Study 12
+- [x] Study 7
+- [x] Study 8
+- [x] Study 9
+- [x] Study 10
+- [x] Study 11
+- [x] Study 12
