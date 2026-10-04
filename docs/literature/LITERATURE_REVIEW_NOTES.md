@@ -397,11 +397,191 @@ Memon, S. M. Z., Wamala, R., & Kabano, I. H. (2025). Identifying predictors of u
 
 https://doi.org/10.3390/ijerph22111691
 
+
+
+
+## Study 3: Miah (2026)
+
+### Paper Title
+
+Explainable Machine Learning Analysis of Factors Associated with Skilled Birth Attendance in Burkina Faso
+
+### Country / Study Setting
+
+Burkina Faso.
+
+### Dataset
+
+The study used data from the 2021 Burkina Faso Demographic and Health Survey (BF-DHS).
+
+The final analysis included 5,111 women aged 15–49 years.
+
+### Purpose of the Study
+
+The study aimed to use explainable machine learning to predict skilled birth attendance in Burkina Faso, identify the most important factors associated with the predictions, and examine geographical and urban-rural inequalities in skilled birth attendance.
+
+### Methods Used
+
+The researcher compared five machine-learning models:
+
+- Random Forest
+- Decision Tree
+- K-Nearest Neighbors
+- Logistic Regression
+- Support Vector Machine
+
+Boruta feature selection was used to identify relevant predictors.
+
+SMOTE was used to address class imbalance.
+
+The models were evaluated using several performance measures, including:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Matthews Correlation Coefficient (MCC)
+- Cohen's kappa
+- AUROC
+
+SHAP was used to explain the model's predictions and identify important predictors.
+
+Decision Curve Analysis (DCA) was used to assess the potential usefulness of the model predictions.
+
+Spatial mapping was also used to examine geographical variation in predicted skilled birth attendance across Burkina Faso.
+
+### Main Findings
+
+Random Forest achieved the highest discrimination among the five models.
+
+The Random Forest model achieved an AUROC of 0.71, which the study described as moderate performance.
+
+Important predictors identified in the study included:
+
+- Province
+- Four or more antenatal care visits
+- Maternal age at first birth of at least 20 years
+- Age at first sexual intercourse of at least 18 years
+- Sexual activity
+- Household wealth
+- Religion
+
+The geographical analysis showed variation in predicted skilled birth attendance across Burkina Faso.
+
+Higher predicted probabilities were observed in some central and western provinces, while lower predicted probabilities were observed in Sahel, Sud-Ouest and Est.
+
+The study also reported greater inequalities in rural areas.
+
+### My Understanding
+
+In simple terms, the researcher wanted to find out whether information from the Burkina Faso DHS could be used by machine-learning models to identify patterns associated with skilled birth attendance.
+
+Five different models were tested, and Random Forest performed best. However, its AUROC of 0.71 showed moderate rather than extremely high predictive performance.
+
+The researcher then used SHAP to understand which characteristics were contributing most to the predictions.
+
+The study also went beyond simply predicting skilled birth attendance by looking at where geographical differences occurred across Burkina Faso.
+
+This showed that machine learning can be combined with explainability and geographical analysis to investigate inequalities in maternal healthcare.
+
+### Relevance to My Research
+
+This study is highly relevant to my proposed research because it investigates skilled birth attendance using DHS data and machine-learning methods.
+
+Like my proposed research, it focuses on one African country rather than pooling many countries together.
+
+The study also compares several machine-learning models and uses SHAP to make the model predictions interpretable.
+
+The geographical component is particularly relevant because my proposed research is also interested in geographical differences within Nigeria.
+
+The study demonstrates that geographical information can be incorporated into an explainable machine-learning analysis of skilled birth attendance.
+
+It also provides another example of dealing with class imbalance, in this case using SMOTE.
+
+### Differences From My Research
+
+The study was conducted in Burkina Faso using the 2021 Burkina Faso DHS.
+
+My proposed research will focus specifically on Nigeria using the 2023–24 Nigeria Demographic and Health Survey.
+
+The study examined geographical variation in predicted skilled birth attendance. My proposed research is interested not only in geographical and socioeconomic patterns in the outcome but also in examining whether the predictive model itself performs differently across important Nigerian geographical and socioeconomic groups.
+
+These are related but different questions.
+
+For example, identifying that one region has lower predicted skilled birth attendance does not necessarily tell us whether the model predicts equally well for women in that region compared with women in another region.
+
+My proposed research will also place particular emphasis on predictors that could reasonably be known before the index delivery.
+
+### Limitations / Research Gap Identified
+
+The study used cross-sectional DHS data, so relationships identified by the models should not be interpreted as proof that the predictors cause skilled birth attendance.
+
+The study was specific to Burkina Faso, meaning that the findings and predictive patterns may not generalise directly to Nigeria.
+
+The best-performing model achieved moderate discrimination with an AUROC of 0.71, showing that predicting skilled birth attendance remains challenging even when machine-learning methods are used.
+
+The study examined geographical differences in predicted skilled birth attendance, but geographical variation in predictions is different from evaluating whether model performance is consistent across geographical or socioeconomic subgroups.
+
+For my proposed research, this raises an important question about whether a model developed using Nigerian data performs similarly across different Nigerian regions and socioeconomic groups.
+
+This remains a potential research gap and will be assessed against the remaining literature before drawing a final conclusion.
+
+### Important Variables Identified
+
+Important predictors included:
+
+- Province
+- Antenatal care visits
+- Maternal age at first birth
+- Age at first sexual intercourse
+- Sexual activity
+- Household wealth
+- Religion
+
+### Pre-Delivery Variables Only?
+
+Several important predictors, including province, antenatal care history, household wealth and religion, could potentially be known before delivery.
+
+However, each candidate predictor for my proposed research will be assessed carefully according to whether it would genuinely be available before the specific index delivery being predicted.
+
+Variables will not be included in my proposed model simply because they were used in a previous study.
+
+### Model Evaluation
+
+- Best-performing model: Random Forest
+- ROC-AUC: 0.71
+- Performance description: Moderate discrimination
+- Other metrics evaluated: Accuracy, Precision, Recall, F1-score, Matthews Correlation Coefficient and Cohen's kappa
+- Class imbalance approach: SMOTE
+- Feature selection: Boruta
+- Explainability: SHAP
+- Additional evaluation: Decision Curve Analysis
+- Geographical analysis: Spatial mapping
+- Calibration: Not highlighted as a main evaluation in the article abstract
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Dataset and sample verified
+- [x] Methods verified
+- [x] Results verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+
+### Full Citation
+
+Miah, M. S. (2026). Explainable machine learning analysis of factors associated with skilled birth attendance in Burkina Faso. Scientific Reports. https://doi.org/10.1038/s41598-026-72356-7
+
+### DOI / Original Publication
+
+https://doi.org/10.1038/s41598-026-72356-7
+
 ## Review Progress
 
 - [x] Study 1
 - [x] Study 2
-- [ ] Study 3
+- [x] Study 3
 - [ ] Study 4
 - [ ] Study 5
 - [ ] Study 6
