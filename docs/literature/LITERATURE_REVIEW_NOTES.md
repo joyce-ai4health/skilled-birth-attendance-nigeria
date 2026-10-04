@@ -90,9 +90,7 @@ If no, document variables that would not reasonably be known before childbirth.
 
 ---
 
----
-
-## Review Progress
+## Reviewed Studies
 
 
 ## Study 1: Taye et al. (2025)
