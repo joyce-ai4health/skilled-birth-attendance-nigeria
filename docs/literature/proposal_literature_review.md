@@ -46,29 +46,44 @@ The proposed research will consequently define a clear pre-delivery prediction p
 
 ## 2.4 Model Evaluation, Calibration and Explainability
 
-The reviewed machine-learning literature demonstrates that model performance can be evaluated using several complementary measures, including accuracy, precision, recall, F1-score, ROC-AUC and, where appropriate, PR-AUC. These measures provide different information about predictive performance and should not be treated as interchangeable.
+The reviewed machine-learning literature demonstrates that model performance can be evaluated using several complementary measures, including accuracy, precision, recall, F1-score and ROC-AUC. These measures provide different information about predictive performance and should not be treated as interchangeable.
 
-For the proposed research, performance among women who do not use skilled birth attendance is particularly important. A model could achieve high overall accuracy while performing poorly in identifying this group, particularly when outcome classes are imbalanced. Evaluation should therefore include class-specific measures such as precision, recall and F1-score in addition to overall discrimination.
+For the proposed research, performance among women who do not use skilled birth attendance is particularly important. A model could achieve high overall accuracy while performing poorly in identifying this group, particularly when the outcome classes are imbalanced. Evaluation should therefore include class-specific measures such as precision, recall and F1-score in addition to overall discrimination.
 
-PR-AUC may also be informative because it focuses on the relationship between precision and recall and can provide useful information when the outcome of interest is less common than the alternative class.
+Precision-recall analysis may also be informative when evaluating an imbalanced binary outcome because it focuses directly on performance for the positive class. Saito and Rehmsmeier (2015) demonstrated that precision-recall plots can provide more informative assessments than ROC plots when evaluating binary classifiers on strongly imbalanced datasets. Therefore, PR-AUC will be considered alongside ROC-AUC where appropriate.
 
-Calibration represents another important dimension of prediction-model evaluation. Whereas discrimination assesses how well a model separates women with different outcomes, calibration concerns the agreement between predicted probabilities and observed outcomes. The reviewed prediction studies did not evaluate calibration consistently. The proposed research will therefore explicitly assess calibration alongside discrimination and class-specific performance.
+Calibration represents another important dimension of prediction-model evaluation. Whereas discrimination assesses how well a model distinguishes between individuals with different outcomes, calibration concerns the agreement between predicted probabilities and observed outcomes. A model can discriminate well while still producing poorly calibrated probabilities; consequently, both discrimination and calibration are important when evaluating prediction models (Efthimiou et al., 2024).
 
-Explainability is also important when applying machine-learning methods to maternal-health research. Several reviewed studies used SHAP to identify characteristics contributing to model predictions. Such approaches can help clarify how complex models arrive at their predictions and identify influential variables.
+The reviewed skilled birth attendance prediction studies did not evaluate calibration consistently. The proposed research will therefore explicitly assess calibration alongside discrimination and class-specific performance rather than relying on accuracy or ROC-AUC alone.
+
+Explainability is also important when applying machine-learning methods to maternal-health research. Several of the reviewed studies used SHAP to identify characteristics contributing to model predictions. Such approaches can help clarify how complex models arrive at their predictions and identify influential variables.
 
 However, predictive importance should not automatically be interpreted as evidence of causality. A characteristic may contribute strongly to prediction without causing non-use of skilled birth attendance. Explainability results in the proposed study will therefore be interpreted as predictive relationships rather than causal effects.
 
+### Methodology References for This Section
+
+Efthimiou, O., Seo, M., Chalkou, K., Debray, T., Egger, M., Salanti, G., et al. (2024). Developing clinical prediction models: A step-by-step guide. *BMJ, 386*, e078276. https://doi.org/10.1136/bmj-2023-078276
+
+Saito, T., & Rehmsmeier, M. (2015). The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. *PLOS ONE, 10*(3), e0118432. https://doi.org/10.1371/journal.pone.0118432
+
+
 ## 2.5 Validation, Survey Structure and Subgroup Performance
 
-The Nigeria Demographic and Health Survey uses a complex sampling design in which respondents are sampled within geographical clusters. Women living within the same communities may share healthcare environments, socioeconomic conditions and other contextual characteristics.
+The Nigeria Demographic and Health Survey uses a complex sampling design in which respondents are sampled within geographical clusters. Women living within the same communities may share healthcare environments, socioeconomic conditions and other contextual characteristics. Previous multilevel studies of skilled birth attendance have also demonstrated the importance of community-level variation.
 
-Previous multilevel studies of skilled birth attendance have demonstrated the importance of community-level variation. This suggests that the clustered structure of the NDHS should be considered when developing and evaluating prediction models rather than automatically assuming that all observations are completely independent.
+This clustered structure is relevant when developing and evaluating prediction models. Prediction-model methodology for clustered datasets emphasises that clustering should be considered during model development and validation because model performance may vary across clusters and populations (Debray et al., 2023).
 
-The reviewed machine-learning studies used validation approaches including train-test splitting and cross-validation. However, the appropriateness of the validation strategy depends on the intended use of the prediction model and the structure of the data. The proposed research will therefore examine an appropriate validation strategy that considers the clustered structure of the NDHS and reduces the risk of obtaining overly optimistic estimates of model performance.
+The reviewed machine-learning studies used validation approaches including train-test splitting and cross-validation. However, the appropriateness of a validation strategy depends on the intended use of the prediction model and the structure of the data. Randomly dividing individuals from the same clustered dataset between development and validation samples may provide limited information about how well a model generalises to different clusters or settings. Cluster-based approaches can instead evaluate performance while preserving the clustered structure of the data (Debray et al., 2023).
 
-Subgroup performance is also important. Previous Nigerian research has demonstrated substantial differences in skilled birth attendance according to geographical region, urban or rural residence, household wealth, education and healthcare accessibility.
+Internal-external cross-validation is one approach described for clustered prediction data. In this approach, a model is repeatedly developed using all clusters except one and evaluated in the cluster that was left out. Repeating the process across clusters can provide information about variation in model performance and its potential generalisability across different settings (Debray et al., 2023). However, the exact validation strategy for the proposed research will be determined after examining the structure, number and distribution of clusters in the 2023–24 NDHS.
 
-Strong overall predictive performance may therefore conceal weaker performance within particular population groups. Where sample sizes permit, the proposed research will examine model performance across important geographical and socioeconomic subgroups. This will help determine whether the model performs reasonably consistently across different sections of the Nigerian population.
+Subgroup performance is also important. Previous Nigerian research has demonstrated substantial differences in skilled birth attendance according to geographical region, urban or rural residence, household wealth, education and healthcare accessibility. Strong overall predictive performance may therefore conceal weaker performance within particular population groups.
+
+Where sample sizes permit, the proposed research will examine model performance across important geographical and socioeconomic subgroups. This will help determine whether discrimination and calibration are reasonably consistent across different sections of the Nigerian population rather than relying solely on overall model performance.
+
+### Methodology Reference for This Section
+
+Debray, T. P. A., et al. (2023). Transparent reporting of multivariable prediction models developed or validated using clustered data (TRIPOD-Cluster): Explanation and elaboration. *BMJ, 380*, e071058. https://doi.org/10.1136/bmj-2022-071058
 
 ## 2.6 Research Gap
 
