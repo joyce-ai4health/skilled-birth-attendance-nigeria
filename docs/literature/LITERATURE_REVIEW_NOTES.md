@@ -768,8 +768,203 @@ Sani, J., Halane, S., Ahmed, M. M., Ahmed, A. M., & Mohamoud, J. H. (2025). Expl
 ### DOI / Original Publication
 
 https://doi.org/10.1007/s44163-025-00436-0
+
 ---
 
+## Study 5: Unegbu (2026)
+
+### Paper Title
+
+Determinants of Skilled Birth Attendance in Nigeria: A Population-Based Analysis of the 2018 Demographic and Health Survey
+
+### Publication Status
+
+Preprint published on medRxiv.
+
+This study had not undergone peer review at the time it was reviewed. Therefore, its findings will be interpreted with appropriate caution.
+
+### Country / Study Setting
+
+Nigeria.
+
+### Dataset
+
+The study used data from the 2018 Nigeria Demographic and Health Survey (NDHS).
+
+The analysis included 21,465 women who had given birth during the five years preceding the survey and had the required information for the analysis.
+
+### Purpose of the Study
+
+The study aimed to identify demographic, socioeconomic, healthcare and geographical factors associated with skilled birth attendance among women in Nigeria.
+
+Rather than developing a machine-learning prediction model, the study focused mainly on determining which characteristics remained statistically associated with skilled birth attendance after accounting for other factors.
+
+### Methods Used
+
+The researcher used survey-weighted statistical analysis to account for the complex sampling design of the Nigeria DHS.
+
+Multivariable logistic regression was used to examine the relationship between different characteristics and skilled birth attendance.
+
+The analysis considered both crude and adjusted associations.
+
+This allowed the researcher to examine whether relationships observed between individual characteristics and skilled birth attendance remained after accounting for other variables.
+
+### Main Findings
+
+Overall, approximately 44.9% of women in the study had skilled birth attendance.
+
+There were very large geographical differences across Nigeria.
+
+Skilled birth attendance was approximately:
+
+- 17.7% in the North West
+- 85.6% in the South West
+
+Several factors remained independently associated with skilled birth attendance after adjustment.
+
+Some of the strongest reported associations included:
+
+- Higher education: adjusted odds ratio approximately 7.01
+- Richest household wealth group: adjusted odds ratio approximately 6.27
+- Four or more antenatal care visits: adjusted odds ratio approximately 3.80
+
+Region, urban/rural residence, maternal age and parity were also associated with skilled birth attendance.
+
+Higher parity was associated with lower odds of skilled birth attendance.
+
+### My Understanding
+
+In simple terms, this study looked at Nigerian women and tried to understand why some women were more likely than others to have a skilled health professional assisting them during childbirth.
+
+The researcher used the 2018 Nigeria DHS and compared characteristics such as education, household wealth, antenatal care, region, residence, age and number of previous births.
+
+The study found that skilled birth attendance was not equally distributed across Nigeria. There were especially large differences between geographical regions.
+
+Women with higher education, greater household wealth and sufficient antenatal care visits were much more likely to have skilled birth attendance.
+
+One important thing I learned from this study is that factors can overlap.
+
+For example, an urban woman may also be wealthier, more educated and have better access to healthcare. Therefore, looking at only one factor at a time may give a misleading picture.
+
+The adjusted analysis helped determine which factors remained associated with skilled birth attendance after considering other characteristics.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it focuses specifically on Nigeria and investigates the same broad outcome: skilled birth attendance.
+
+It also uses Nigeria DHS data, which is the same survey programme that will provide the data for my proposed research.
+
+The study provides important Nigeria-specific evidence about factors associated with skilled birth attendance.
+
+Education, household wealth, antenatal care, region, residence, age and parity are particularly relevant because many of these characteristics could potentially be known before childbirth.
+
+The very large regional differences identified in the study also support the importance of considering geographical variation when studying skilled birth attendance in Nigeria.
+
+The study will therefore help inform the candidate predictors and subgroup analyses that I may investigate using the 2023–24 NDHS.
+
+### Differences From My Research
+
+The study used the 2018 Nigeria DHS, while my proposed research will use the newer 2023–24 Nigeria DHS.
+
+The study primarily investigated statistical associations using logistic regression.
+
+My proposed research has a different primary objective: to investigate whether information available before childbirth can be used to predict non-use of skilled birth attendance.
+
+I intend to compare predictive models, evaluate their performance and use explainability methods to understand important predictors.
+
+My proposed research also intends to examine model calibration and assess whether predictive performance differs across important Nigerian geographical and socioeconomic groups.
+
+Therefore, the previous study mainly answers:
+
+"Which factors are associated with skilled birth attendance?"
+
+My proposed research asks:
+
+"How well can we identify women at greater risk of non-use before delivery, and does the model perform reliably across different groups?"
+
+### Limitations / Research Gap Identified
+
+The study used cross-sectional survey data. Therefore, the reported associations should not be interpreted as proof that the identified characteristics cause skilled birth attendance.
+
+Some DHS information is self-reported and may be affected by recall or reporting bias.
+
+The study used data from the 2018 NDHS, so the findings may not completely represent the maternal-health situation captured in the newer 2023–24 NDHS.
+
+The study focused primarily on association rather than developing and evaluating a machine-learning prediction model.
+
+Another important consideration is that this study is currently a preprint and had not undergone peer review at the time of this literature review.
+
+For my research, this study provides strong Nigeria-specific background evidence, but it does not answer whether non-use of skilled birth attendance can be predicted using the newer 2023–24 NDHS and information available before delivery.
+
+These observations will be considered together with the remaining literature before defining the final research gap.
+
+### Important Variables Identified
+
+Important factors included:
+
+- Maternal education
+- Household wealth
+- Antenatal care visits
+- Geographical region
+- Urban/rural residence
+- Maternal age
+- Parity
+
+### Pre-Delivery Variables Only?
+
+Many of the important characteristics identified in this study could potentially be known before childbirth.
+
+These include:
+
+- Maternal education
+- Household wealth
+- Region
+- Residence
+- Maternal age
+- Parity
+- Antenatal care history
+
+However, my proposed research will assess the timing of every candidate variable carefully to ensure that the information would genuinely have been available before the specific delivery being predicted.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main analytical method: Survey-weighted multivariable logistic regression
+- Machine-learning model comparison: No
+- ROC-AUC: Not a main reported evaluation
+- Accuracy: Not a main reported evaluation
+- Precision: Not a main reported evaluation
+- Recall: Not a main reported evaluation
+- F1-score: Not a main reported evaluation
+- Calibration: Not a main reported evaluation
+- Explainability method such as SHAP: No
+- Main focus: Statistical associations with skilled birth attendance
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Dataset and sample verified
+- [x] Methods verified
+- [x] Results verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Unegbu, U. L. (2026). Determinants of skilled birth attendance in Nigeria: A population-based analysis of the 2018 Demographic and Health Survey. medRxiv. https://doi.org/10.64898/2026.04.23.26350432
+
+### DOI / Original Publication
+
+https://doi.org/10.64898/2026.04.23.26350432
+
+### Publication Note
+
+This article is a medRxiv preprint and had not undergone peer review when it was reviewed for this project.
+
+---
 ## Review Progress
 
 - [x] Study 1
