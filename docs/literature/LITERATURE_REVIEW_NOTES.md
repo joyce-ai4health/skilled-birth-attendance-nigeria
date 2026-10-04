@@ -230,10 +230,177 @@ Taye, E. A., Woubet, E. Y., Hailie, G. Y., Arage, F. G., Zerihun, T. E., Zegeye,
 
 https://doi.org/10.1186/s12889-025-22007-9
 
+
+## Study 2: Memon, Wamala and Kabano (2025)
+
+### Paper Title
+
+Identifying Predictors of Utilization of Skilled Birth Attendance in Uganda Through Interpretable Machine Learning
+
+### Country / Study Setting
+
+Uganda.
+
+### Dataset
+
+The study used data from the 2016 Uganda Demographic and Health Survey (UDHS).
+
+The analysis focused on women aged 15–49 who had given birth within the five years preceding the survey.
+
+### Purpose of the Study
+
+The study aimed to determine whether machine-learning models could predict the use of skilled birth attendance among women in Uganda.
+
+The researchers also wanted to identify and explain the factors that were most important in predicting whether a woman would use skilled birth attendance.
+
+### Methods Used
+
+The researchers compared seven machine-learning models:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+- XGBoost
+- LightGBM
+- CatBoost
+
+The data were divided into 80% training data and 20% testing data.
+
+The researchers also used 5-fold cross-validation during hyperparameter tuning.
+
+Because fewer women belonged to the non-use of skilled birth attendance group, class weighting was used to help the models pay more attention to this smaller group.
+
+The researchers chose class weighting rather than SMOTE because many of the predictors were categorical and they wanted to avoid generating potentially unrealistic synthetic observations.
+
+SHAP was used to explain the predictions of the best-performing model and identify the factors that contributed most to its predictions.
+
+### Main Findings
+
+XGBoost was identified as the best-performing model.
+
+For identifying women who did not use skilled birth attendance, the study reported:
+
+- F1-score: 0.52
+- Recall: 0.73
+- ROC-AUC: 0.75
+
+Important predictors included:
+
+- Maternal education
+- Antenatal care visits
+- Region
+- Urban/rural residence
+- Perceived distance to a healthcare facility
+
+The SHAP analysis showed how these characteristics influenced the model's predictions.
+
+For example, higher education and greater antenatal care use were associated with predictions toward skilled birth attendance, while rural residence and difficulty with distance to a healthcare facility contributed toward predictions of non-use.
+
+### My Understanding
+
+In simple terms, the researchers wanted to find out whether information about women in the Uganda DHS could help a computer identify women who were less likely to have a skilled health professional assisting them during childbirth.
+
+Instead of testing only one machine-learning model, they tested seven different models to see which one performed best.
+
+XGBoost performed best overall.
+
+The researchers were particularly interested in identifying women who did not use skilled birth attendance. This group was smaller than the group that used skilled attendance, so they used class weighting to make the model pay more attention to these women.
+
+They also used SHAP to understand why the model made its predictions.
+
+The study showed that factors such as education, antenatal care, region, residence and access to healthcare were useful for predicting skilled birth attendance.
+
+### Relevance to My Research
+
+This study is highly relevant to my proposed research because it investigates the same general outcome: skilled birth attendance.
+
+It also uses DHS data and compares several machine-learning models rather than relying on only one model.
+
+The use of SHAP is relevant because my proposed research also aims to make the final model interpretable rather than treating it as a black box.
+
+Another important similarity is the focus on identifying women who do not use skilled birth attendance. This is closely related to the outcome described in my research topic.
+
+The study is particularly useful to my research because the researchers excluded variables directly tied to the outcome, such as place of delivery. This supports my intention to avoid variables that would not reasonably be available before childbirth.
+
+The study also provides a useful example of handling class imbalance using class weighting rather than automatically applying synthetic oversampling methods.
+
+### Differences From My Research
+
+The study was conducted in Uganda using the 2016 Uganda DHS.
+
+My proposed research will focus specifically on Nigeria using the 2023–24 Nigeria Demographic and Health Survey.
+
+The healthcare system, geographical differences, socioeconomic conditions and patterns of maternal healthcare use in Nigeria may differ from those in Uganda. Therefore, findings from the Uganda study cannot automatically be assumed to apply to Nigerian women.
+
+My proposed research also intends to evaluate model calibration and investigate whether model performance differs across important Nigerian geographical and socioeconomic groups.
+
+### Limitations / Research Gap Identified
+
+The study used cross-sectional DHS data, meaning that the findings should not be interpreted as proving that the identified predictors cause women to use or not use skilled birth attendance.
+
+The data were also based on women's self-reported information and may therefore be affected by recall or reporting bias.
+
+The research was specific to Uganda and used the 2016 Uganda DHS, so its findings and predictive model may not generalise directly to Nigeria or to more recent populations.
+
+For my proposed research, an important remaining question is whether a similar interpretable machine-learning approach can successfully identify women less likely to receive skilled birth attendance specifically in Nigeria using the more recent 2023–24 NDHS.
+
+I am also interested in going beyond discrimination metrics by examining model calibration and performance across geographical and socioeconomic groups.
+
+These potential gaps will be considered together with evidence from the remaining studies before the final research gap is concluded.
+
+### Important Variables Identified
+
+Important predictors included:
+
+- Maternal education
+- Antenatal care visits
+- Region
+- Urban/rural residence
+- Perceived distance to a healthcare facility
+
+### Pre-Delivery Variables Only?
+
+The study deliberately excluded variables directly tied to the outcome, including place of delivery.
+
+The important predictors highlighted by the study, such as education, antenatal care visits, region, residence and perceived distance to a healthcare facility, can generally be determined before delivery.
+
+This makes the study particularly relevant to my proposed pre-delivery prediction approach.
+
+### Model Evaluation
+
+- Best-performing model: XGBoost
+- F1-score for non-use group: 0.52
+- Recall for non-use group: 0.73
+- ROC-AUC: 0.75
+- Train/test split: 80% / 20%
+- Cross-validation: 5-fold cross-validation used during hyperparameter tuning
+- Class imbalance approach: Class weighting
+- Explainability: SHAP
+- Calibration: Not a main reported evaluation in the study
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Dataset and study population verified
+- [x] Methods verified
+- [x] Results verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+
+### Full Citation
+
+Memon, S. M. Z., Wamala, R., & Kabano, I. H. (2025). Identifying predictors of utilization of skilled birth attendance in Uganda through interpretable machine learning. International Journal of Environmental Research and Public Health, 22(11), 1691. https://doi.org/10.3390/ijerph22111691
+
+### DOI / Original Publication
+
+https://doi.org/10.3390/ijerph22111691
+
 ## Review Progress
 
 - [x] Study 1
-- [ ] Study 2
+- [x] Study 2
 - [ ] Study 3
 - [ ] Study 4
 - [ ] Study 5
