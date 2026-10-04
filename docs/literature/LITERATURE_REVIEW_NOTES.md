@@ -965,6 +965,201 @@ https://doi.org/10.64898/2026.04.23.26350432
 This article is a medRxiv preprint and had not undergone peer review when it was reviewed for this project.
 
 ---
+
+## Study 6: Akinyemi et al. (2022)
+
+### Paper Title
+
+Multivariate Decomposition of Trends, Inequalities and Predictors of Skilled Birth Attendants Utilisation in Nigeria (1990–2018): A Cross-Sectional Analysis of Change Drivers
+
+### Publication Status
+
+Peer-reviewed journal article published in BMJ Open.
+
+### Country / Study Setting
+
+Nigeria.
+
+### Dataset
+
+The study used data from five Nigeria Demographic and Health Survey rounds:
+
+- 1990 NDHS
+- 2003 NDHS
+- 2008 NDHS
+- 2013 NDHS
+- 2018 NDHS
+
+The study population consisted of women aged 15–49 years who had at least one birth during the five years preceding the respective surveys.
+
+### Purpose of the Study
+
+The study aimed to examine changes in the utilisation of skilled birth attendants in Nigeria over time.
+
+The researchers were particularly interested in:
+
+- Trends in skilled birth attendant utilisation.
+- Inequalities in utilisation among different groups of women.
+- Factors associated with skilled birth attendant utilisation.
+- Understanding what contributed to changes in utilisation over time.
+
+### Methods Used
+
+The researchers conducted a cross-sectional analysis using multiple rounds of nationally representative Nigeria DHS data.
+
+They examined trends and inequalities in skilled birth attendant utilisation.
+
+They also used multivariate decomposition analysis to investigate what contributed to changes in skilled birth attendant utilisation over time.
+
+The decomposition separated the observed change into two broad components:
+
+- Changes in population characteristics, also referred to as the endowment or composition component.
+- Changes in the effects or influence of those characteristics, also referred to as the coefficient component.
+
+In simple terms, this allowed the researchers to investigate whether changes in skilled birth attendant utilisation happened because Nigerian women's characteristics changed over time or because the relationships between those characteristics and SBA utilisation changed.
+
+### Main Findings
+
+The study found that skilled birth attendant utilisation in Nigeria increased over time.
+
+Between 2003 and 2018, utilisation increased by approximately 12 percentage points.
+
+The decomposition analysis showed that approximately:
+
+- 11.5% of the change was explained by differences in women's characteristics.
+- 88.5% was attributed to differences in the effects of those characteristics.
+
+The study also identified persistent inequalities in skilled birth attendant utilisation across demographic, socioeconomic and healthcare-related groups.
+
+The findings showed that changes in skilled birth attendant utilisation could not be explained simply by changes in the characteristics of Nigerian women.
+
+### My Understanding
+
+In simple terms, the researchers wanted to understand how the use of skilled birth attendants in Nigeria changed over many years and why those changes occurred.
+
+They compared information from five Nigeria DHS surveys covering the period from 1990 to 2018.
+
+They found that skilled birth attendant utilisation increased over time, but the improvement was not equal across all groups of women.
+
+The researchers also tried to understand why SBA utilisation changed.
+
+Their analysis showed that only part of the change could be explained by changes in women's characteristics.
+
+A much larger part was related to changes in how those characteristics were associated with the use of skilled birth attendants.
+
+This study helps me understand that maternal healthcare patterns in Nigeria are not fixed. They can change over time.
+
+Therefore, findings from older Nigeria DHS surveys should not automatically be assumed to describe the situation captured by the newer 2023–24 NDHS.
+
+### Relevance to My Research
+
+This study is highly relevant to my research because it focuses specifically on Nigeria and investigates the same broad outcome: skilled birth attendant utilisation.
+
+It also uses Nigeria DHS data, which is the same survey programme that provides the data for my proposed research.
+
+The study provides important historical evidence showing how skilled birth attendance has changed in Nigeria over time.
+
+It also highlights inequalities in skilled birth attendant utilisation among different population groups.
+
+This is relevant to my proposed research because I intend to use the newer 2023–24 NDHS and examine whether predictive performance differs across important geographical and socioeconomic groups.
+
+The study also demonstrates why using the latest available Nigeria DHS is valuable. Relationships identified using older surveys may change over time.
+
+### Differences From My Research
+
+This study focused primarily on historical trends, inequalities and the factors contributing to changes in skilled birth attendant utilisation between different survey periods.
+
+It did not primarily aim to develop a machine-learning prediction model.
+
+My proposed research will focus on the 2023–24 Nigeria DHS and investigate whether information available before childbirth can be used to predict non-use of skilled birth attendance.
+
+I also intend to compare predictive models, assess model performance and calibration, use explainability methods, and investigate model performance across important geographical and socioeconomic groups.
+
+Therefore, this study mainly asks:
+
+"How has skilled birth attendant utilisation changed in Nigeria over time, and what contributed to those changes?"
+
+My proposed study asks:
+
+"Can information available before childbirth identify women at greater risk of non-use of skilled birth attendance using the latest NDHS, and how reliably does the model perform across different groups?"
+
+### Limitations / Research Gap Identified
+
+The study was based on repeated cross-sectional DHS surveys rather than longitudinally following the same women over time.
+
+Therefore, the analysis describes population-level changes across different survey periods rather than changes experienced by the same individual women.
+
+The study relied on secondary DHS data and was limited to variables available within those surveys.
+
+Because DHS information includes self-reported responses, some variables may also be affected by recall or reporting bias.
+
+The most recent survey included in the study was the 2018 NDHS.
+
+Therefore, the study does not describe patterns captured in the newer 2023–24 Nigeria DHS.
+
+The study also focused on trends and decomposition rather than developing and evaluating a model for predicting individual non-use of skilled birth attendance before delivery.
+
+For my research, this leaves an important reason to investigate the latest Nigerian data using a prediction-focused approach.
+
+However, this will be considered together with the remaining studies before the final research gap is concluded.
+
+### Important Variables / Factors Examined
+
+The study examined demographic, socioeconomic and healthcare-related characteristics associated with skilled birth attendant utilisation.
+
+These included factors relating to:
+
+- Maternal education
+- Household socioeconomic status
+- Place of residence
+- Geographical region
+- Maternal characteristics
+- Healthcare utilisation
+
+### Pre-Delivery Variables Only?
+
+This was not specifically designed as a pre-delivery prediction study.
+
+However, several of the demographic and socioeconomic characteristics examined could potentially be known before childbirth.
+
+For my proposed research, every candidate predictor will be assessed separately to confirm that it would genuinely have been available before the specific delivery being predicted.
+
+### Model Evaluation
+
+This was not primarily a machine-learning prediction study.
+
+- Main approach: Trend, inequality and multivariate decomposition analysis
+- Machine-learning model comparison: No
+- Accuracy: Not applicable as a main evaluation
+- Precision: Not applicable as a main evaluation
+- Recall: Not applicable as a main evaluation
+- F1-score: Not applicable as a main evaluation
+- ROC-AUC: Not applicable as a main evaluation
+- Calibration: Not a main evaluation
+- SHAP/explainable ML: No
+- Main focus: Trends, inequalities and drivers of change in SBA utilisation
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] DHS survey rounds verified
+- [x] Study population verified
+- [x] Methods verified
+- [x] Main findings verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+- [x] Publication status checked
+
+### Full Citation
+
+Akinyemi, J. O., et al. (2022). Multivariate decomposition of trends, inequalities and predictors of skilled birth attendants utilisation in Nigeria (1990–2018): A cross-sectional analysis of change drivers. BMJ Open, 12, e051791.
+
+### DOI / Original Publication
+
+https://doi.org/10.1136/bmjopen-2021-051791
+
+---
 ## Review Progress
 
 - [x] Study 1
@@ -973,9 +1168,9 @@ This article is a medRxiv preprint and had not undergone peer review when it was
 - [x] Study 4
 - [x] Study 5
 - [x] Study 6
-- [x] Study 7
-- [x] Study 8
-- [x] Study 9
-- [x] Study 10
-- [x] Study 11
-- [x] Study 12
+- [ ] Study 7
+- [ ] Study 8
+- [ ] Study 9
+- [ ] Study 10
+- [ ] Study 11
+- [ ] Study 12
