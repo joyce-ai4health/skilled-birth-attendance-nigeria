@@ -2029,15 +2029,26 @@ Skilled Birth Attendance and Its Associated Factors in Chad and Nigeria: A Multi
 
 Peer-reviewed research article published in PLOS Global Public Health.
 
+### Source Reviewed
+
+Full text reviewed.
+
 ### Country / Study Setting
 
 Chad and Nigeria.
 
 ### Dataset
 
-The study used recent Demographic and Health Survey data from Chad and Nigeria.
+The study used Demographic and Health Survey (DHS) data from:
 
-The researchers combined eligible observations from the two countries to investigate skilled birth attendance and factors associated with its use.
+- Chad DHS 2014–15
+- Nigeria DHS 2018
+
+The researchers used the Kids Recode (KR) datasets.
+
+The analysis included a total weighted sample of 52,666 reproductive-age women.
+
+The study therefore did not use the 2023–24 Nigeria DHS.
 
 ### Purpose of the Study
 
@@ -2047,115 +2058,144 @@ The researchers used a multilevel approach because women living within the same 
 
 ### Methods Used
 
-The researchers used multilevel logistic regression.
+The researchers conducted a secondary analysis of DHS data using Stata version 17.
 
-This allowed them to examine factors operating at both:
+They used mixed-effects binary logistic regression to account for the hierarchical structure of the DHS data.
 
-- Individual level
-- Community level
+DHS primary sampling units (PSUs) were treated as community-level clusters.
 
-The analysis considered demographic, socioeconomic, healthcare-use and community characteristics.
+The analysis examined both individual-level and community-level characteristics.
 
-The researchers reported adjusted odds ratios with confidence intervals to identify factors independently associated with skilled birth attendance.
+Individual-level characteristics included:
+
+- Maternal age
+- Maternal education
+- Household wealth
+- Marital status
+- Antenatal care attendance
+- Media exposure
+- Pregnancy wantedness
+
+Community-level characteristics included:
+
+- Urban/rural residence
+- Distance to a health facility
+- Community-level education
+- Community-level media exposure
+- Community-level poverty
+
+Adjusted odds ratios with 95% confidence intervals were used to identify factors associated with skilled birth attendance.
+
+The researchers also assessed variation between communities and compared the fit of different multilevel models.
 
 ### Main Findings
 
-Overall skilled birth attendance in the combined study population was approximately 41.9%.
+The overall prevalence of skilled birth attendance across Chad and Nigeria was 41.9%.
 
 Several characteristics were significantly associated with skilled birth attendance.
 
-Antenatal care was particularly important.
+Women who had a history of antenatal care visits had substantially higher odds of skilled birth attendance:
 
-Women who had antenatal care visits had substantially higher odds of receiving skilled birth attendance.
+- ANC visits: AOR = 5.56
 
-The study reported an adjusted odds ratio of approximately 5.56 for antenatal care.
+Maternal education was also important:
 
-Maternal education was also associated with higher skilled birth attendance.
+- Primary education: AOR = 1.77
+- Secondary or higher education: AOR = 4.06
 
-Reported adjusted odds ratios included approximately:
+Household wealth was associated with skilled birth attendance:
 
-- Primary education: 1.77
-- Secondary education: 4.06
+- Middle wealth category: AOR = 1.37
+- Rich wealth category: AOR = 2.11
 
-Household wealth was also associated with skilled birth attendance.
+Women exposed to media had higher odds of skilled birth attendance:
 
-Women exposed to media had higher odds of skilled birth attendance, with an adjusted odds ratio of approximately 1.50.
+- Media exposure: AOR = 1.50
 
-Community-level education was also important, with an adjusted odds ratio of approximately 2.73.
+Community-level education was also strongly associated with skilled birth attendance:
 
-Other factors relating to residence and healthcare accessibility were also associated with skilled birth attendance.
+- High community-level education: AOR = 2.73
+
+Place of residence and distance to a health facility were also identified as important factors.
+
+The study found substantial variation between communities. The intra-class correlation coefficient (ICC) in the null model was 61%, indicating that community-level clustering accounted for an important part of the variation in skilled birth attendance.
 
 ### My Understanding
 
-In simple terms, the researchers wanted to understand why some women in Nigeria and Chad received skilled assistance during childbirth while others did not.
+In simple terms, the researchers wanted to understand why some women in Chad and Nigeria received skilled assistance during childbirth while others did not.
 
-They looked not only at characteristics of individual women but also at characteristics of the communities in which the women lived.
+They did not look only at the characteristics of individual women. They also considered characteristics of the communities in which the women lived.
 
 The study found that antenatal care was strongly associated with skilled birth attendance.
 
-Education, household wealth, media exposure and community education were also important.
+Education, household wealth and media exposure were also important.
 
-This helped me understand that skilled birth attendance may be influenced by both a woman's personal circumstances and the wider environment in which she lives.
+Community characteristics mattered as well. For example, women living in communities with higher levels of education were more likely to receive skilled birth attendance.
 
-It also provides more recent evidence that factors such as antenatal care, education, wealth and community characteristics continue to be relevant when studying skilled birth attendance.
+The large amount of variation between communities also helped me understand that maternal healthcare use may depend not only on a woman's personal circumstances but also on the environment in which she lives.
 
 ### Relevance to My Research
 
-This study is highly relevant to my research because Nigeria was included, DHS data were used and the outcome was skilled birth attendance.
+This study is highly relevant to my research because Nigeria was included, DHS data were used, and the outcome was skilled birth attendance.
 
-It also provides recent peer-reviewed evidence about individual and community characteristics associated with skilled birth attendance.
+It provides evidence that both individual and community characteristics should be considered when studying skilled birth attendance.
 
-Several of the important characteristics identified could potentially be available before childbirth, including:
+Several characteristics identified in the study could potentially provide pre-delivery information, including:
 
 - Maternal education
 - Household wealth
 - Antenatal care
 - Media exposure
 - Residence
-- Healthcare accessibility
-- Community education
+- Distance to healthcare
+- Community-level education
 
-The findings therefore provide useful evidence for variables that I may investigate when reviewing the 2023–24 Nigeria DHS.
+The study also reinforces the importance of considering the clustered structure of DHS data.
 
-The study also reinforces evidence from earlier papers that contextual and community characteristics may provide useful information beyond individual-level characteristics.
+This is relevant to my research because women in the NDHS are sampled within geographical clusters, and observations from women in the same community may not be completely independent.
 
 ### Differences From My Research
 
 The study combined data from Chad and Nigeria rather than developing a Nigeria-only analysis.
 
-It primarily focused on identifying factors statistically associated with skilled birth attendance using multilevel regression.
+It used:
 
-My proposed research will focus specifically on Nigeria using the 2023–24 NDHS.
+- Chad DHS 2014–15
+- Nigeria DHS 2018
 
-My primary objective is to investigate whether information available before childbirth can predict non-use of skilled birth attendance.
+My proposed research will focus specifically on Nigeria using the newer 2023–24 NDHS.
 
-I also intend to compare predictive models, evaluate discrimination and calibration, use explainability methods and investigate whether model performance differs across important geographical and socioeconomic groups.
+The study focused primarily on identifying statistical associations using mixed-effects logistic regression.
+
+My proposed research will focus on predicting non-use of skilled birth attendance using information that could reasonably be available before childbirth.
+
+I also intend to compare predictive models, evaluate discrimination and calibration, use explainability methods, and investigate model performance across important geographical and socioeconomic groups.
 
 Therefore, this study mainly asks:
 
-"Which individual and community factors are associated with skilled birth attendance in Chad and Nigeria?"
+"Which individual and community characteristics are associated with skilled birth attendance in Chad and Nigeria?"
 
-My proposed research asks:
+My research asks:
 
-"How well can pre-delivery information predict non-use of skilled birth attendance specifically in Nigeria using the 2023–24 NDHS?"
+"How well can information available before childbirth predict non-use of skilled birth attendance in Nigeria using the 2023–24 NDHS?"
 
 ### Limitations / Research Gap Identified
 
-The study used cross-sectional DHS data, so associations should not automatically be interpreted as causal relationships.
+The study used cross-sectional DHS data, so the identified relationships should not automatically be interpreted as causal.
 
-Some DHS variables are based on self-reported information and may therefore be affected by recall or reporting bias.
+Some DHS information is self-reported and may therefore be affected by recall or reporting bias.
 
-The study combined Nigeria and Chad, meaning that the results do not represent a Nigeria-specific predictive model.
+The study combined Chad and Nigeria, meaning that the reported findings do not represent a Nigeria-specific prediction model.
 
-The study also focused primarily on association rather than developing and evaluating machine-learning models for prediction.
+The Nigeria component used the 2018 NDHS rather than the newer 2023–24 NDHS.
 
-For my proposed research, another important issue is predictor timing.
+The study focused on statistical associations rather than developing and comparing machine-learning prediction models.
 
-Although antenatal care and several other characteristics could potentially be known before childbirth, I will need to define the prediction point carefully.
+It also did not evaluate predictive performance using measures such as ROC-AUC, precision, recall or F1-score because prediction was not its primary objective.
 
-For example, the use of total antenatal care visits may be appropriate if prediction occurs late in pregnancy before delivery, but it would not be available if the intended prediction point were early pregnancy.
+For my research, predictor timing remains important.
 
-Therefore, the exact timing and definition of every candidate predictor will be reviewed before modelling.
+Although antenatal care can occur before delivery, the exact ANC variable used must still be checked against my chosen prediction point to ensure that the information would genuinely have been available when the prediction is intended to be made.
 
 ### Important Variables / Factors Identified
 
@@ -2166,36 +2206,43 @@ Important factors included:
 - Household wealth
 - Media exposure
 - Place of residence
-- Healthcare accessibility
+- Distance to health facility
 - Community-level education
-- Other individual and community characteristics
+- Community-level media exposure
+- Community-level poverty
+- Maternal age
+- Marital status
+- Pregnancy wantedness
 
 ### Pre-Delivery Variables Only?
 
 The study was not specifically designed as a pre-delivery prediction study.
 
-However, several important characteristics could potentially be known before childbirth.
-
-These include:
+However, several characteristics could potentially be known before childbirth, including:
 
 - Maternal education
 - Household wealth
 - Residence
 - Media exposure
-- Community education
-- Healthcare accessibility
+- Distance to healthcare
+- Community-level education
+- Maternal age
+- Marital status
 
-Antenatal care may also represent pre-delivery information, but its suitability depends on the exact prediction point used in my research.
+Antenatal care could also represent pre-delivery information, but its suitability depends on the exact prediction point used in my research.
 
-Therefore, each variable will be assessed carefully to ensure that it was genuinely available before the delivery being predicted and does not introduce data leakage.
+Therefore, each candidate predictor will need to be checked carefully against the 2023–24 NDHS documentation before inclusion in my prediction model.
 
 ### Model Evaluation
 
 This was not primarily a machine-learning prediction study.
 
-- Main analytical method: Multilevel logistic regression
+- Main analytical method: Mixed-effects binary logistic regression
 - Individual-level factors examined: Yes
 - Community-level factors examined: Yes
+- Community clustering assessed: Yes
+- Intra-class correlation coefficient (null model): 61%
+- Model fit assessment: Deviance (-2 log likelihood)
 - Machine-learning model comparison: No
 - Accuracy: Not a main evaluation
 - Precision: Not a main evaluation
@@ -2203,26 +2250,30 @@ This was not primarily a machine-learning prediction study.
 - F1-score: Not a main evaluation
 - ROC-AUC: Not a main evaluation
 - PR-AUC: Not a main evaluation
-- Calibration: Not a main evaluation
+- Calibration: Not reported as a prediction-model evaluation
 - SHAP/explainable ML: No
 - Main focus: Factors associated with skilled birth attendance
 
 ### Verification Checklist
 
 - [x] Original paper located
-- [x] Abstract reviewed
+- [x] Full text reviewed
+- [x] Authors verified
 - [x] Countries verified
-- [x] DHS data source verified
+- [x] DHS survey years verified
+- [x] Dataset type verified
+- [x] Sample size verified
 - [x] Outcome verified
 - [x] Methods verified
 - [x] Main findings verified
 - [x] Individual and community factors reviewed
+- [x] Model-fit approach verified
 - [x] Full citation verified
 - [x] Publication status checked
 
 ### Full Citation
 
-Negash, W. D., & Wubneh, H. D. (2025). Skilled birth attendance and its associated factors in Chad and Nigeria: A multilevel analysis of DHS data. PLOS Global Public Health.
+Negash, W. D., & Wubneh, H. D. (2025). Skilled birth attendance and its associated factors in Chad and Nigeria: A multilevel analysis of DHS data. PLOS Global Public Health, 5(12), e0005290.
 
 ### DOI / Original Publication
 
