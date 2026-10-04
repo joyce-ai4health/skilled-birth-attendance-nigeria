@@ -4,9 +4,11 @@
 
 Predicting Non-Use of Skilled Birth Attendance in Nigeria Using Pre-Delivery Information: Evidence from the 2024 Nigeria Demographic and Health Survey
 
-## Author
+## Author 
 
-- Intern Name: Joyce Ebruphiyo Etata
+- Intern Name(s): Joyce Ebruphiyo Etata
+- Intern ID: DF-2026-181
+- Intern Email: joyceebrusetata@gmail.com
 - Programme: Data Science Internship
 - Date: October 2026
 
