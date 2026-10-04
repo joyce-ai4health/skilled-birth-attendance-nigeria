@@ -577,17 +577,210 @@ Miah, M. S. (2026). Explainable machine learning analysis of factors associated 
 
 https://doi.org/10.1038/s41598-026-72356-7
 
+---
+
+## Study 4: Sani et al. (2025)
+
+### Paper Title
+
+Exploring the Application of Machine Learning and SHAP Explanations to Predict Health Facility Deliveries in Somalia
+
+### Country / Study Setting
+
+Somalia.
+
+### Dataset
+
+The study used data from the 2020 Somalia Demographic and Health Survey (SDHS).
+
+The researchers used the Individual Record (IR) dataset and included 8,951 women aged 15–49 who had information about their place of delivery.
+
+### Purpose of the Study
+
+The study aimed to determine whether machine-learning models could predict whether women in Somalia would deliver in a health facility.
+
+The researchers also wanted to identify the factors that were most important in predicting health facility delivery and use SHAP to explain how these factors influenced the model predictions.
+
+### Methods Used
+
+The researchers compared seven machine-learning models:
+
+- Logistic Regression
+- Support Vector Machine
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors
+- Gradient Boosting
+- XGBoost
+
+The data were divided into 80% training data and 20% testing data.
+
+Stratified 5-fold cross-validation was also used.
+
+The researchers used multiple imputation with predictive mean matching to handle missing values.
+
+SMOTE was used to address class imbalance because facility deliveries were the smaller outcome group.
+
+Recursive Feature Elimination (RFE) was used for feature selection, and 10 features were retained for the final modelling.
+
+SHAP was used to explain the contribution of different predictors to the model predictions.
+
+### Main Findings
+
+Random Forest achieved the best overall performance.
+
+Its reported performance was:
+
+- Accuracy: 82%
+- Precision: 81%
+- Recall: 84%
+- F1-score: 82%
+- ROC-AUC: 0.89
+
+XGBoost performed similarly, with an ROC-AUC of 0.89 and accuracy of 80%.
+
+Important predictors identified through SHAP included:
+
+- Household wealth
+- Residence type
+- Education
+- Antenatal care visits
+- Region
+
+Marital status, employment and distance to a health facility also contributed to predictions but were less influential.
+
+Household wealth was identified as the most influential predictor.
+
+### My Understanding
+
+In simple terms, the researchers wanted to see whether information about women in the Somalia DHS could help a computer predict whether they would give birth in a healthcare facility rather than at home.
+
+They tested seven different machine-learning models instead of relying on only one.
+
+Random Forest performed best overall.
+
+The researchers also used SHAP to understand why the model was making its predictions.
+
+The results showed that factors such as household wealth, where a woman lived, education, antenatal care attendance and region were important in predicting health facility delivery.
+
+This study shows that machine learning can be combined with DHS data and explainability methods to investigate maternal healthcare use.
+
+### Relevance to My Research
+
+This study is relevant to my proposed research because it applies machine learning to a maternal-health service-use problem using DHS data from an African country.
+
+It also compares several machine-learning models and uses SHAP to explain the predictions.
+
+Many of its important predictors, including education, household wealth, residence, region and antenatal care attendance, could reasonably be known before childbirth.
+
+The study therefore provides useful methodological evidence for using pre-delivery information to predict maternal healthcare utilisation.
+
+It also provides another example of using Random Forest, XGBoost, SMOTE, cross-validation and SHAP in maternal-health prediction research.
+
+### Differences From My Research
+
+The most important difference is the outcome being predicted.
+
+This study predicted health facility delivery, meaning whether a woman gave birth in a healthcare facility or at home.
+
+My proposed research will predict non-use of skilled birth attendance, meaning whether the delivery was assisted by a provider who meets the NDHS definition of a skilled birth attendant.
+
+Health facility delivery and skilled birth attendance are closely related maternal-health outcomes, but they are not the same outcome.
+
+The study was also conducted in Somalia using the 2020 Somalia DHS, while my proposed research will focus specifically on Nigeria using the 2023–24 Nigeria DHS.
+
+My proposed research also intends to examine model calibration and model performance across important Nigerian geographical and socioeconomic groups.
+
+### Limitations / Research Gap Identified
+
+The authors reported several limitations.
+
+The study used cross-sectional data, which means the relationships identified should not be interpreted as proving cause and effect.
+
+Some information, including antenatal care attendance and delivery location, was self-reported and may therefore be affected by recall bias.
+
+The model did not undergo external validation outside Somalia, which limits how confidently its performance can be generalised to other populations.
+
+The authors also noted that although SHAP improves interpretability, machine-learning models may still be difficult to integrate directly into routine maternal-health decision-making.
+
+For my research, the main distinction is that this study does not directly investigate skilled birth attendance.
+
+It therefore provides related methodological evidence rather than direct evidence for my exact outcome.
+
+### Important Variables Identified
+
+Important predictors included:
+
+- Household wealth
+- Urban/rural/nomadic residence
+- Maternal education
+- Antenatal care visits
+- Region
+- Distance to a healthcare facility
+- Marital status
+- Employment status
+
+### Pre-Delivery Variables Only?
+
+The important predictors highlighted by the study largely represent information that could potentially be known before childbirth.
+
+Examples include:
+
+- Education
+- Household wealth
+- Residence
+- Region
+- Antenatal care attendance
+- Distance to a healthcare facility
+
+However, my proposed study will independently assess every candidate predictor to ensure that it would genuinely be available before the specific delivery being predicted.
+
+### Model Evaluation
+
+- Best-performing model: Random Forest
+- Accuracy: 82%
+- Precision: 81%
+- Recall: 84%
+- F1-score: 82%
+- ROC-AUC: 0.89
+- Train/test split: 80% / 20%
+- Cross-validation: Stratified 5-fold cross-validation
+- Class imbalance approach: SMOTE
+- Feature selection: Recursive Feature Elimination
+- Explainability: SHAP
+- External validation: No
+- Calibration: Not highlighted as a main evaluation
+
+### Verification Checklist
+
+- [x] Original paper located
+- [x] Abstract reviewed
+- [x] Dataset and sample verified
+- [x] Methods verified
+- [x] Results verified
+- [x] Limitations reviewed
+- [x] Full citation verified
+
+### Full Citation
+
+Sani, J., Halane, S., Ahmed, M. M., Ahmed, A. M., & Mohamoud, J. H. (2025). Exploring the application of machine learning and SHAP explanations to predict health facility deliveries in Somalia. Discover Artificial Intelligence, 5, 211. https://doi.org/10.1007/s44163-025-00436-0
+
+### DOI / Original Publication
+
+https://doi.org/10.1007/s44163-025-00436-0
+---
+
 ## Review Progress
 
 - [x] Study 1
 - [x] Study 2
 - [x] Study 3
-- [ ] Study 4
-- [ ] Study 5
-- [ ] Study 6
-- [ ] Study 7
-- [ ] Study 8
-- [ ] Study 9
-- [ ] Study 10
-- [ ] Study 11
-- [ ] Study 12
+- [x] Study 4
+- [x] Study 5
+- [x] Study 6
+- [x] Study 7
+- [x] Study 8
+- [x] Study 9
+- [x] Study 10
+- [x] Study 11
+- [x] Study 12
