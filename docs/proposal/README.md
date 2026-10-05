@@ -101,11 +101,6 @@ Explainability is also important when applying machine-learning methods to mater
 
 However, predictive importance should not automatically be interpreted as evidence of causality. A characteristic may contribute strongly to prediction without causing non-use of skilled birth attendance. Explainability results in the proposed study will therefore be interpreted as predictive relationships rather than causal effects.
 
-### Methodology References for This Section
-
-Efthimiou, O., Seo, M., Chalkou, K., Debray, T., Egger, M., Salanti, G., et al. (2024). Developing clinical prediction models: A step-by-step guide. *BMJ, 386*, e078276. https://doi.org/10.1136/bmj-2023-078276
-
-Saito, T., & Rehmsmeier, M. (2015). The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. *PLOS ONE, 10*(3), e0118432. https://doi.org/10.1371/journal.pone.0118432
 
 ## 3. Problem Statement
 
@@ -384,7 +379,7 @@ The proposed implementation will proceed through the following stages:
 
 ### 9.2 Repository Structure
 
-The project repository will separate source code, documentation, analysis outputs and restricted data. A proposed structure is:
+The project is organised in a version-controlled GitHub repository that separates restricted data, research documentation, analytical code and permissible outputs. The current repository structure is:
 
     project-root/
     │
@@ -393,50 +388,88 @@ The project repository will separate source code, documentation, analysis output
     │   ├── interim/
     │   └── processed/
     │
-    ├── notebooks/
-    │   ├── 01_data_audit/
-    │   ├── 02_data_preparation/
-    │   ├── 03_descriptive_analysis/
-    │   ├── 04_modeling/
-    │   └── 05_evaluation/
-    │
-    ├── src/
-    │   ├── data/
-    │   ├── features/
-    │   ├── models/
-    │   └── evaluation/
-    │
-    ├── reports/
-    │   ├── figures/
-    │   └── tables/
-    │
     ├── docs/
-    │   ├── proposal/
-    │   └── literature/
+    │   ├── data_dictionary/
+    │   ├── literature/
+    │   ├── methodology/
+    │   └── proposal/
     │
     ├── models/
+    ├── notebooks/
+    ├── reports/
+    │   └── figures/
+    ├── src/
+    ├── tables/
     │
-    ├── RESEARCH_LOG.md
+    ├── .gitignore
+    ├── CITATION.cff
     ├── README.md
+    ├── RESEARCH_LOG.md
     └── requirements.txt
 
-The exact structure may be refined as implementation progresses, but major changes will be documented to maintain a clear analytical trail.
+The `docs/` directory contains the main research documentation. The proposal is maintained in `docs/proposal/`, literature-review materials in `docs/literature/`, methodology documentation in `docs/methodology/`, and project data-dictionary materials in `docs/data_dictionary/`.
+
+The `notebooks/` and `src/` directories will contain analytical notebooks and reusable code as the project progresses. Model artefacts will be organised under `models/`, figures under `reports/figures/`, and permissible tabular outputs under `tables/`.
+
+The `data/` directory provides local organisational locations for raw, interim and processed data. Restricted DHS respondent-level data will not be committed to the public repository. The `.gitignore` file will be maintained to prevent restricted or local data files from being uploaded accidentally.
+
+`README.md` provides the project overview, `RESEARCH_LOG.md` records research progress and methodological decisions, `requirements.txt` documents software dependencies, and `CITATION.cff` provides repository citation information.
+
+The structure may be refined as implementation progresses, but substantial changes will be documented to maintain a clear and reproducible analytical trail.
+
 
 ### 9.3 Data Protection and Version Control
 
-The `data/raw/` directory is intended only as a local organisational location for authorised DHS microdata and will not be committed to the public repository. Appropriate `.gitignore` rules will be used to prevent respondent-level DHS files and other restricted data from being uploaded accidentally.
+The `data/raw/` directory is intended as a local organisational location for authorised DHS respondent-level microdata and other source data that require restricted handling. DHS respondent-level microdata will not be committed to the public GitHub repository. Appropriate `.gitignore` rules will be maintained to prevent restricted DHS files and other local data from being uploaded accidentally.
 
-Version control will be used for code, documentation and permissible analytical outputs. Commits will record meaningful stages of the research so that changes to the analytical workflow can be traced over time.
+Version control will be used for code, documentation and permissible analytical outputs. Commits will record meaningful stages of the research so that changes to the analytical workflow and documentation can be traced over time.
 
-The repository will therefore support reproducibility without redistributing restricted DHS respondent-level data.
+The repository may contain reproducible code, documentation, data dictionaries, predictor-audit records, figures, tables and other non-identifiable outputs where permitted. It will not contain respondent-level DHS microdata or other material prohibited by applicable DHS data-use requirements.
+
+The repository will therefore support transparency and reproducibility while protecting restricted survey data.
 
 ## 10. Timeline
 
-*To be completed. A phased table or Gantt chart will be added.*
+The research will be completed in phases, with later analytical stages building on decisions established during the data audit and predictor review. The proposed timeline may be adjusted where necessary based on data quality, modelling requirements and mentor feedback.
+
+| Phase | Main Activities | Expected Output |
+|---|---|---|
+| **Week 1: Research Proposal and Literature Review** | Finalise the research problem, literature review, research gap, research questions, objectives, proposed methodology and references. | Completed first draft of research proposal and documented literature review. |
+| **Week 2: Data Audit and Study Population** | Review the authorised 2023–24 NDHS files and documentation; confirm the analytical file, reference period, inclusion and exclusion criteria, outcome construction, survey-design variables, sample size and missingness. | Data-audit report, confirmed analytical population and documented outcome definition. |
+| **Week 3: Predictor Audit and Data Preparation** | Review candidate predictors for relevance, timing, questionnaire coverage and leakage risk; classify variables as eligible, excluded or timing-dependent; clean and prepare the analytical data. | Predictor audit, data dictionary and analysis-ready workflow. |
+| **Week 4: Descriptive and Association Analysis** | Produce survey-weighted descriptive statistics and examine associations between eligible characteristics and non-use of skilled birth attendance. | Descriptive tables, figures and association-analysis results. |
+| **Week 5: Baseline and Machine-Learning Modelling** | Develop the logistic regression baseline and selected machine-learning models; conduct training and hyperparameter tuning using the predefined validation protocol. | Fitted candidate models and documented modelling workflow. |
+| **Week 6: Model Evaluation and Interpretation** | Evaluate discrimination, class-specific performance and calibration; compare candidate models and apply appropriate model-interpretation methods. | Model-comparison results, calibration assessment and interpretation outputs. |
+| **Week 7: Subgroup and Sensitivity Analyses** | Assess model performance across geopolitical zones, urban/rural residence and household wealth groups where feasible; conduct justified sensitivity analyses. | Subgroup-performance and sensitivity-analysis results. |
+| **Week 8: Final Reporting and Reproducibility** | Consolidate findings, limitations and implications; finalise tables and figures; review reproducibility documentation; complete the report and presentation materials. | Final research report, reproducible code and documentation, and presentation materials. |
+
+Progress and methodological decisions will be documented throughout the project in `RESEARCH_LOG.md`. Any changes to the proposed timeline or analytical plan will be recorded with their rationale.
 
 ---
 
 ## 11. References
 
-*To be completed. All references will be verified against the original publications before the final proposal is submitted.*
+Efthimiou, O., Seo, M., Chalkou, K., Debray, T., Egger, M., & Salanti, G. (2024). Developing clinical prediction models: A step-by-step guide. *BMJ, 386*, e078276. https://doi.org/10.1136/bmj-2023-078276
+
+Fagbamigbe, A. F., & Oyedele, O. K. (2022). Multivariate decomposition of trends, inequalities and predictors of skilled birth attendants utilisation in Nigeria (1990–2018): A cross-sectional analysis of change drivers. *BMJ Open, 12*(4), e051791. https://doi.org/10.1136/bmjopen-2021-051791
+
+Federal Ministry of Health and Social Welfare of Nigeria, National Population Commission, & ICF. (2025). *Nigeria Demographic and Health Survey 2024*. Federal Ministry of Health and Social Welfare, National Population Commission, and ICF.
+
+Memon, S. M. Z., Wamala, R., & Kabano, I. H. (2025). Identifying predictors of utilization of skilled birth attendance in Uganda through interpretable machine learning. *International Journal of Environmental Research and Public Health, 22*(11), 1691. https://doi.org/10.3390/ijerph22111691
+
+Miah, M. S. (2026). Explainable machine learning analysis of factors associated with skilled birth attendance in Burkina Faso. *Scientific Reports*. https://doi.org/10.1038/s41598-026-72356-7
+
+Oyedele, O. K., Fagbamigbe, A. F., Akinyemi, O. J., & Adebowale, A. S. (2023). Coverage-level and predictors of maternity continuum of care in Nigeria: Implications for maternal, newborn and child health programming. *BMC Pregnancy and Childbirth, 23*, 36. https://doi.org/10.1186/s12884-023-05372-4
+
+Saito, T., & Rehmsmeier, M. (2015). The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. *PLOS ONE, 10*(3), e0118432. https://doi.org/10.1371/journal.pone.0118432
+
+Sani, J., Alhur, A. A., & Ahmed, M. M. (2026). Machine learning-based prediction of institutional delivery dropout (IDD) among Nigerian women: An exploratory study using SHAP interpretability. *Journal of Epidemiology and Global Health, 16*, 28. https://doi.org/10.1007/s44197-026-00525-y
+
+Solanke, B. L., & Rahman, S. A. (2018). Multilevel analysis of factors associated with assistance during delivery in rural Nigeria: Implications for reducing rural-urban inequity in skilled care at delivery. *BMC Pregnancy and Childbirth, 18*, 438. https://doi.org/10.1186/s12884-018-2074-9
+
+Taye, E. A., Woubet, E. Y., Hailie, G. Y., Arage, F. G., Zerihun, T. E., Zegeye, A. T., Zeleke, T. C., & Kassaw, A. T. (2025). Application of the random forest algorithm to predict skilled birth attendance and identify determinants among reproductive-age women in 27 Sub-Saharan African countries: Machine learning analysis. *BMC Public Health, 25*, 901. https://doi.org/10.1186/s12889-025-22007-9
+
+Unegbu, U. L. (2026). Determinants of skilled birth attendance in Nigeria: A population-based analysis of the 2018 Demographic and Health Survey [Preprint]. *medRxiv*. https://doi.org/10.64898/2026.04.23.26350432
+
+World Health Organization. (2018). *Definition of skilled health personnel providing care during childbirth: The 2018 joint statement by WHO, UNFPA, UNICEF, ICM, ICN, FIGO and IPA*. World Health Organization.
 
