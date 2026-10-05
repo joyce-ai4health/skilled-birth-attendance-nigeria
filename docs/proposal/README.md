@@ -7,31 +7,34 @@ Predicting Non-Use of Skilled Birth Attendance in Nigeria Using Pre-Delivery Inf
 ## Author 
 
 - Intern Name(s): Joyce Ebruphiyo Etata
-- Programme: Dataraflow  Internship
+- Programme: Dataraflow Internship
 - Date: October 2026
 
 ---
 
 ## Abstract
 
-*To be completed after the main proposal. Target: 200–300 words.*
+Skilled attendance during childbirth is an important component of maternal healthcare, yet substantial gaps remain in Nigeria. According to the 2024 Nigeria Demographic and Health Survey (NDHS), 46% of live births in the two years preceding the survey were assisted by a skilled provider. This study proposes to investigate whether information available before childbirth can be used to predict non-use of skilled birth attendance in Nigeria using the 2023–24 NDHS.
+
+The study will use a quantitative secondary-data design combining survey-weighted association analysis, predictive modelling and model interpretation. The primary analysis will focus on the most recent live birth within the two years preceding the survey. Candidate predictors will be audited for substantive relevance, measurement timing, questionnaire coverage and potential data leakage within a late-pregnancy, pre-delivery prediction framework. An interpretable logistic regression baseline will be compared with appropriate machine-learning classifiers. Model performance will be evaluated using discrimination, class-specific performance and calibration. Where sample sizes and outcome frequencies permit, performance will also be assessed across geopolitical zones, urban and rural residence, and household wealth groups. Appropriate explainability methods will be used to identify characteristics contributing to model predictions without interpreting predictive relationships as causal effects.
+
+The study is expected to provide a Nigeria-specific, leakage-aware framework for predicting non-use of skilled birth attendance using recent nationally representative data. Its expected contributions include evidence on model discrimination and calibration, assessment of subgroup performance, interpretable prediction results and a reproducible analytical workflow that respects DHS data-use requirements. The resulting framework is intended to support research and population-level maternal-health planning rather than individual clinical decision-making.
 
 ---
 
 
 ## 1. Introduction / Background
 
-Maternal health remains an important public-health priority because pregnancy and childbirth can involve complications that require timely recognition and appropriate care. One important component of safe childbirth is access to skilled health personnel who have the competencies required to provide appropriate care during labour and delivery and to identify, manage or refer women and newborns when complications occur. Skilled birth attendance is therefore recognised internationally as an important indicator of maternal healthcare coverage and is included as Sustainable Development Goal (SDG) indicator 3.1.2 (World Health Organization [WHO], n.d.).
+Maternal health remains an important public-health priority because pregnancy and childbirth can involve complications that require timely recognition and appropriate care. One important component of safe childbirth is access to skilled health personnel who have the competencies required to provide appropriate care during labour and delivery and to identify, manage or refer women and newborns when complications occur. Skilled birth attendance is therefore recognised internationally as an important indicator of maternal healthcare coverage and is included as Sustainable Development Goal (SDG) indicator 3.1.2 (World Health Organization [WHO], 2018).
 
 Despite the importance of skilled care during childbirth, access remains uneven in Nigeria. According to the 2024 Nigeria Demographic and Health Survey (NDHS), among live births in the two years before the survey, 46% were assisted by a skilled provider, most commonly a nurse or midwife. During the same period, 43% of live births occurred in a health facility, while 56% occurred at home (Federal Ministry of Health and Social Welfare of Nigeria [FMoHSW], National Population Commission [NPC], & ICF, 2025). These national figures also conceal substantial socioeconomic inequalities. Home delivery was reported for 82% of births among women with no education and 82% among women in the poorest households (FMoHSW, NPC, & ICF, 2025). These patterns demonstrate that access to skilled childbirth care remains an important maternal-health challenge in Nigeria.
 
-Previous Nigerian research has identified several characteristics associated with skilled birth attendance, including maternal education, household wealth, geographical location, urban or rural residence, antenatal care, healthcare accessibility, media exposure and women's participation in healthcare decision-making (Fagbamigbe & Oyedele, 2022; Solanke & Rahman, 2018).
-
+Previous Nigerian research has identified several characteristics associated with skilled birth attendance, including maternal education, household wealth, geographical location, urban or rural residence, antenatal care, healthcare accessibility, media exposure and women's participation in healthcare decision-making (Fagbamigbe & Oyedele, 2022; Solanke & Rahman, 2018). However, identifying characteristics associated with skilled birth attendance is different from determining whether those characteristics can be used to predict non-use before childbirth.
 This distinction between association and prediction is important. Association studies can help identify relationships between maternal, household and community characteristics and skilled birth attendance. A prediction study has a different objective: to determine how well available information can distinguish between individuals who will and will not experience a specified outcome. In the context of skilled birth attendance, a useful prediction framework could potentially identify women at greater risk of giving birth without skilled attendance early enough for the information to support targeted maternal-health interventions or further assessment.
 
 The timing of predictor information is particularly important for such a model. A model intended for use before childbirth should not depend on information that becomes available only during or after the delivery being predicted. Variables such as the actual place of delivery, delivery complications or newborn outcomes may be strongly related to skilled birth attendance but would not represent realistic pre-delivery information for the same birth. Even antenatal-care variables require careful consideration because the information available depends on the point during pregnancy at which prediction is intended to occur. Clearly defining the prediction point and restricting predictors accordingly can therefore help reduce the risk of data leakage and produce a more realistic assessment of predictive performance.
 
-The 2024 NDHS provides an opportunity to investigate this question using recent nationally representative Nigerian data. The survey contains information on maternal and reproductive health, socioeconomic circumstances, healthcare utilisation, women's empowerment and other demographic and health characteristics  (FMoHSW, NPC, & ICF, 2025). However, the final analytical population, outcome construction, candidate predictor set and missing-data profile for the proposed study will be determined only after the relevant NDHS datasets and documentation have been systematically audited. This proposal therefore does not assume analytical results that have not yet been produced.
+The 2024 NDHS provides an opportunity to investigate this question using recent nationally representative Nigerian data. The survey contains information on maternal and reproductive health, socioeconomic circumstances, healthcare utilisation, women's empowerment and other demographic and health characteristics (FMoHSW, NPC, & ICF, 2025). However, the final analytical population, outcome construction, candidate predictor set and missing-data profile for the proposed study will be determined only after the relevant NDHS datasets and documentation have been systematically audited. This proposal therefore does not assume analytical results that have not yet been produced.
 
 This study proposes to develop and evaluate models for predicting non-use of skilled birth attendance in Nigeria using information that could reasonably be available before childbirth. The research will distinguish prediction from statistical association, compare an interpretable baseline with appropriate machine-learning approaches, and evaluate discrimination, class-specific performance and calibration. Model-interpretation methods will be used to examine influential predictive characteristics without treating predictive importance as evidence of causality. The study will also consider the clustered structure of the NDHS and, where supported by the available data, examine predictive performance across important geographical and socioeconomic groups.
 
@@ -101,6 +104,14 @@ Explainability is also important when applying machine-learning methods to mater
 
 However, predictive importance should not automatically be interpreted as evidence of causality. A characteristic may contribute strongly to prediction without causing non-use of skilled birth attendance. Explainability results in the proposed study will therefore be interpreted as predictive relationships rather than causal effects.
 
+### 2.5 Research Gap
+
+The reviewed literature shows that skilled birth attendance in Nigeria has been extensively examined from an association-based perspective, while machine-learning studies in other sub-Saharan African settings have demonstrated the feasibility of predicting skilled birth attendance using DHS data. Related machine-learning research has also emerged in Nigeria for maternal-health service utilisation.
+
+However, among the studies reviewed, no Nigeria-specific study was identified that used the 2023–24 NDHS to predict non-use of skilled birth attendance within an explicitly defined pre-delivery framework while also evaluating calibration and predictive performance across geographical and socioeconomic groups. Existing prediction studies also illustrate the importance of carefully considering predictor timing, because variables associated with the index delivery may introduce data leakage when the intended prediction point is before childbirth.
+
+The proposed study addresses this gap by developing and evaluating a Nigeria-specific, leakage-aware prediction framework using recent NDHS data, with explicit attention to predictor timing, calibration, subgroup performance and model interpretation. This gap statement is based on the literature reviewed for this proposal and does not imply that no related study exists outside the reviewed evidence.
+
 
 ## 3. Problem Statement
 
@@ -131,9 +142,9 @@ The following hypotheses will guide the analysis:
 
 **H1:** Maternal, household and contextual characteristics are significantly associated with non-use of skilled birth attendance in Nigeria. Based on previous Nigerian research, lower maternal education, lower household wealth and rural residence are expected to be associated with greater odds of non-use.
 
-**H2:** Predictive performance will differ between the logistic regression baseline and the evaluated machine-learning models when assessed using discrimination, class-specific performance and calibration.
+**H2:** At least one evaluated machine-learning model will demonstrate significantly different predictive performance from the logistic regression baseline on one or more predefined evaluation measures, including discrimination, class-specific performance and calibration.
 
-**H3:** Model performance will vary across geopolitical zones, urban and rural residence, and household wealth groups.
+**H3:** Predictive performance will not be uniform across geopolitical zones, urban and rural residence, and household wealth groups, as assessed using predefined subgroup-performance measures.
 
 The hypotheses concern statistical associations and predictive performance. They are not intended to establish causal relationships.
 
@@ -176,8 +187,9 @@ The study is therefore observational and predictive rather than experimental or 
 ### 6.2 Data Source, Study Population and Sampling
 
 The study will use secondary data from the **2023–24 Nigeria Demographic and Health Survey (NDHS)** obtained through authorised access from The DHS Program. The primary analytical file is expected to be the **Births Recode (BR)**, which contains birth-level records, subject to confirmation during the data audit. Additional recode information will be used only where necessary, appropriate and compatible with the DHS file structure.
+The underlying survey information was collected using the 2023–24 NDHS survey instruments, including the Woman's Questionnaire, which captured information on respondents' background characteristics, reproductive history, maternal healthcare and related characteristics. The relevant questionnaire items and recode documentation will be reviewed during the data audit to confirm the construction and interpretation of analytical variables.
 
-The 2023–24 NDHS used a stratified two-stage sampling design. The 36 states and the Federal Capital Territory were stratified by urban and rural residence, producing 74 sampling strata. In the first stage, 1,400 enumeration-area clusters were selected, comprising 701 urban and 699 rural clusters. In the second stage, 30 households were systematically selected from each cluster, producing an intended sample of approximately 42,000 households. Data collection was successfully completed in 1,380 clusters. Twenty selected clusters could not be visited because of deteriorating security conditions during fieldwork, including 10 clusters in Zamfara State (National Population Commission [NPC] & ICF, 2025).
+The 2023–24 NDHS used a stratified two-stage sampling design. The 36 states and the Federal Capital Territory were stratified by urban and rural residence, producing 74 sampling strata. In the first stage, 1,400 enumeration-area clusters were selected, comprising 701 urban and 699 rural clusters. In the second stage, 30 households were systematically selected from each cluster, producing an intended sample of approximately 42,000 households. Data collection was successfully completed in 1,380 clusters. Twenty selected clusters could not be visited because of deteriorating security conditions during fieldwork, including 10 clusters in Zamfara State (FMoHSW, NPC, & ICF, 2025).
 
 The primary analysis will focus on the **most recent live birth within the two years preceding the survey** for each eligible woman. This reference period aligns the study with the recent-birth skilled-attendance context reported in the 2024 NDHS and ensures that each woman contributes no more than one index delivery to the primary prediction analysis.
 
@@ -197,7 +209,7 @@ Important data limitations include the cross-sectional survey design, reliance o
 
 The primary outcome will be **non-use of skilled birth attendance** for the index birth.
 
-The outcome will be constructed from the 2023–24 NDHS questions identifying the person or persons who assisted during delivery. Under the 2024 NDHS reporting definition, a skilled provider includes a **doctor or nurse/midwife** (NPC & ICF, 2025).
+The outcome will be constructed from the 2023–24 NDHS questions identifying the person or persons who assisted during delivery. Under the 2024 NDHS reporting definition, a skilled provider includes a **doctor or nurse/midwife** (FMoHSW, NPC, & ICF, 2025).
 
 The binary outcome will be coded as:
 
@@ -458,8 +470,6 @@ Federal Ministry of Health and Social Welfare of Nigeria, National Population Co
 Memon, S. M. Z., Wamala, R., & Kabano, I. H. (2025). Identifying predictors of utilization of skilled birth attendance in Uganda through interpretable machine learning. *International Journal of Environmental Research and Public Health, 22*(11), 1691. https://doi.org/10.3390/ijerph22111691
 
 Miah, M. S. (2026). Explainable machine learning analysis of factors associated with skilled birth attendance in Burkina Faso. *Scientific Reports*. https://doi.org/10.1038/s41598-026-72356-7
-
-Oyedele, O. K., Fagbamigbe, A. F., Akinyemi, O. J., & Adebowale, A. S. (2023). Coverage-level and predictors of maternity continuum of care in Nigeria: Implications for maternal, newborn and child health programming. *BMC Pregnancy and Childbirth, 23*, 36. https://doi.org/10.1186/s12884-023-05372-4
 
 Saito, T., & Rehmsmeier, M. (2015). The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. *PLOS ONE, 10*(3), e0118432. https://doi.org/10.1371/journal.pone.0118432
 
