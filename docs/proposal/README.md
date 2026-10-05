@@ -440,6 +440,3 @@ The repository will therefore support reproducibility without redistributing res
 
 *To be completed. All references will be verified against the original publications before the final proposal is submitted.*
 
-## 11. References
-
-*To be completed. All references will be verified against the original publications before the final proposal is submitted.* 
